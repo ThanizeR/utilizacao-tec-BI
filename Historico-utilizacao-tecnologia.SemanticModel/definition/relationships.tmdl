@@ -1,0 +1,24 @@
+relationship c1e67a1d-1822-46cd-a232-f43acdc663d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_UtilizacaoTecnologia.'Data de Início'
+	toColumn: LocalDateTable_581468d7-fffe-49fa-8b40-db762124923d.Date
+
+relationship 7bb4a524-f954-4ae6-bcfc-73744a8f2234
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_UtilizacaoTecnologia.'Data Final'
+	toColumn: LocalDateTable_2c7aff08-41b2-4057-9e3e-ea89123b94b1.Date
+
+relationship AutoDetected_f40483d1-beb9-4429-ae59-6bd8c71351d0
+	fromColumn: f_Taticas.Organização
+	toColumn: d_Organizacoes.Organização
+
+relationship f175bbf2-a318-95cb-9932-a5720b1a9661
+	fromColumn: f_UtilizacaoTecnologia.'ID da Organização'
+	toColumn: d_Organizacoes.'ID da Organização'
+
+relationship d93c3285-62b8-72e9-f48a-f119776af0a7
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: f_Taticas.'ID da Organização'
+	toColumn: f_UtilizacaoTecnologia.'ID da Organização'
+

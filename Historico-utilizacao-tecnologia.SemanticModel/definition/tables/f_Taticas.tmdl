@@ -1,0 +1,45 @@
+table f_Taticas
+	lineageTag: bac86093-64e0-4bcd-95ec-ce6cb63df7d1
+
+	column Organização
+		dataType: string
+		lineageTag: 8e8c02fe-0f1d-410f-9a2d-0643304f3692
+		summarizeBy: none
+		sourceColumn: Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID da Organização'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f77301e-668f-4625-ab1c-ac46e3cafbf0
+		summarizeBy: none
+		sourceColumn: ID da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tática
+		dataType: string
+		lineageTag: 8e479b1a-e27f-4d73-b2f2-b8142f6fd4f1
+		summarizeBy: none
+		sourceColumn: Tática
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_Taticas = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(Web.Contents("https://alvorada365-my.sharepoint.com/personal/thanizerodrigues_alvorada-rs_com_br/Documents/%C3%81rea%20de%20Trabalho/utiliza%C3%A7%C3%A3o%20de%20tecnologias/ACOMPANHAMENTO%20MENSAL/organizacoes_referentes.xlsx"), null, true),
+				    Plan1_Sheet = Fonte{[Item="Plan1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Plan1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Organização", type text}, {"ID da Organização", Int64.Type}, {"Tática", type text}}),
+				    #"Texto Extraído Antes do Delimitador" = Table.TransformColumns(#"Tipo Alterado", {{"Organização", each Text.BeforeDelimiter(_, "("), type text}}),
+				    #"Linhas Classificadas" = Table.Sort(#"Texto Extraído Antes do Delimitador",{{"Organização", Order.Ascending}})
+				in
+				    #"Linhas Classificadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

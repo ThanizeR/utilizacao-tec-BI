@@ -1,0 +1,708 @@
+table f_UtilizacaoTecnologia
+	lineageTag: fab81f4e-18a3-4bee-be07-bb1d26d75069
+
+	column Máquina
+		dataType: string
+		lineageTag: 2fe7a800-da9f-47c8-ab07-f711fd994173
+		summarizeBy: none
+		sourceColumn: Máquina
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modelo
+		dataType: string
+		lineageTag: b653fd86-29ab-4eba-9ee7-71660ab82fbe
+		summarizeBy: none
+		sourceColumn: Modelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 74201fe4-084c-4456-9b2a-820fad3e30eb
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Número de Série da Máquina'
+		dataType: string
+		lineageTag: 3831778f-8f91-42f5-8b66-2a959af2e769
+		summarizeBy: none
+		sourceColumn: Número de Série da Máquina
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organização
+		dataType: string
+		lineageTag: 9e7ff0f7-aba6-4a93-b1b5-c06ba563a500
+		summarizeBy: none
+		sourceColumn: Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID da Organização'
+		dataType: int64
+		formatString: 0
+		lineageTag: a3f56e88-df2a-4a00-8bbc-fbcce078572e
+		summarizeBy: none
+		sourceColumn: ID da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data de Início'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9ce0f7d9-6cd9-4d4b-98d8-0579d8338326
+		summarizeBy: none
+		sourceColumn: Data de Início
+
+		variation Variation
+			isDefault
+			relationship: c1e67a1d-1822-46cd-a232-f43acdc663d7
+			defaultHierarchy: LocalDateTable_581468d7-fffe-49fa-8b40-db762124923d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data Final'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4e5ca2aa-29c2-4f7e-9819-2fd3d03e6f0c
+		summarizeBy: none
+		sourceColumn: Data Final
+
+		variation Variation
+			isDefault
+			relationship: 7bb4a524-f954-4ae6-bcfc-73744a8f2234
+			defaultHierarchy: LocalDateTable_2c7aff08-41b2-4057-9e3e-ea89123b94b1.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ground Speed Automation™ Ativo (%)'
+		dataType: double
+		lineageTag: 69aec796-0cbe-4de6-8a98-61e7c5a88ad5
+		summarizeBy: sum
+		sourceColumn: Ground Speed Automation™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ground Speed Automation™ Ativo (h)'
+		dataType: double
+		lineageTag: 29d0e018-4612-4bfd-af7b-b00a36fefe8d
+		summarizeBy: sum
+		sourceColumn: Ground Speed Automation™ Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ground Speed Automation™ Inativa (h)'
+		dataType: double
+		lineageTag: b4214d82-9c13-40de-8bc0-0dc53bdf6133
+		summarizeBy: sum
+		sourceColumn: Ground Speed Automation™ Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Harvest Settings Automation™ Ativo (%)'
+		dataType: double
+		lineageTag: 2013f9ee-39d8-4c73-aa83-ace2a346b16b
+		summarizeBy: sum
+		sourceColumn: Harvest Settings Automation™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Harvest Settings Automation™ Ativo (h)'
+		dataType: double
+		lineageTag: 3abb82ee-e194-4ac5-85ff-20fa7b4c7908
+		summarizeBy: sum
+		sourceColumn: Harvest Settings Automation™ Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Harvest Settings Automation™ Inativa (h)'
+		dataType: double
+		lineageTag: ecb1d660-f276-41bc-93dc-3eb8389c93fa
+		summarizeBy: sum
+		sourceColumn: Harvest Settings Automation™ Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ActiveYield™ Desligado (h)'
+		dataType: double
+		lineageTag: 6b0d56ec-14b1-49d3-87b4-640dc546c1c7
+		summarizeBy: sum
+		sourceColumn: ActiveYield™ Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ActiveYield™ Ligado (%)'
+		dataType: double
+		lineageTag: 76d76618-958b-4bb5-9475-72b783a2166c
+		summarizeBy: sum
+		sourceColumn: ActiveYield™ Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ActiveYield™ Ligado (h)'
+		dataType: double
+		lineageTag: 03374be8-8b94-4a90-bb04-316bc1fda972
+		summarizeBy: sum
+		sourceColumn: ActiveYield™ Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Pulsante Ativo (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: dcb538b3-6f9e-49c8-94fc-92afe51a06fd
+		summarizeBy: sum
+		sourceColumn: Pulsante Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pulsante Ativo (h)'
+		dataType: double
+		lineageTag: 47cf3e72-73d6-4c8c-836e-49939c551259
+		summarizeBy: sum
+		sourceColumn: Pulsante Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Pulsante Inativa (h)'
+		dataType: double
+		lineageTag: 1c965d5b-4c8f-4b74-8d8d-52f5153733bf
+		summarizeBy: sum
+		sourceColumn: Pulsante Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'See & Spray™ Ativo (%)'
+		dataType: double
+		lineageTag: aec87156-c189-4ae8-a246-8f22384cb136
+		summarizeBy: sum
+		sourceColumn: See & Spray™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'See & Spray™ Ativo (h)'
+		dataType: double
+		lineageTag: cddb7b7f-056a-4b77-9bfa-6dc88fa84327
+		summarizeBy: sum
+		sourceColumn: See & Spray™ Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'See & Spray™ Inativa (h)'
+		dataType: double
+		lineageTag: c810306b-ce59-4c2a-8cfe-8b116c19c47a
+		summarizeBy: sum
+		sourceColumn: See & Spray™ Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Active Terrain Adjustment™ Desligado (h)'
+		dataType: double
+		lineageTag: 215df1a8-c363-49f3-99f2-c10bb4ffdc60
+		summarizeBy: sum
+		sourceColumn: Active Terrain Adjustment™ Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Active Terrain Adjustment™ Ligado (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c71911f0-4a81-4665-b6ac-cb0891cc762d
+		summarizeBy: sum
+		sourceColumn: Active Terrain Adjustment™ Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Active Terrain Adjustment™ Ligado (h)'
+		dataType: double
+		lineageTag: 0691045c-9734-4f71-b6fb-898ef8d1fd5e
+		summarizeBy: sum
+		sourceColumn: Active Terrain Adjustment™ Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Auto Maintain Desligado (h)'
+		dataType: double
+		lineageTag: 93646da0-cd51-4b87-8875-c25051f1278d
+		summarizeBy: sum
+		sourceColumn: Auto Maintain Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Auto Maintain Ligado (%)'
+		dataType: double
+		lineageTag: 06efc089-924f-49ab-af7d-1ee9833f001c
+		summarizeBy: sum
+		sourceColumn: Auto Maintain Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Auto Maintain Ligado (h)'
+		dataType: double
+		lineageTag: 3e4d1ee6-857c-488b-bec4-307314b7ef0b
+		summarizeBy: sum
+		sourceColumn: Auto Maintain Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo de Controle de Seção Ativo (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f2fdc2fc-8f5d-4468-b420-6869c65c18f5
+		summarizeBy: sum
+		sourceColumn: Tempo de Controle de Seção Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo de Controle de Seção Ativo (h)'
+		dataType: double
+		lineageTag: fa7571ed-27b0-4911-97c8-1ebe5e8d22f4
+		summarizeBy: sum
+		sourceColumn: Tempo de Controle de Seção Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo de Controle de Seção Inativa (h)'
+		dataType: double
+		lineageTag: da9cb33b-3d17-48c5-b5da-f31ef5fe2fde
+		summarizeBy: sum
+		sourceColumn: Tempo de Controle de Seção Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo Ligado do Efficiency Manager™ Automático (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 624c9096-ba08-4f19-b575-9cb2dcc9d180
+		summarizeBy: sum
+		sourceColumn: Tempo Ligado do Efficiency Manager™ Automático (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tempo Ligado do Efficiency Manager™ Automático (h)'
+		dataType: double
+		lineageTag: 2163d9d6-55c3-4f2d-a323-7104973d8390
+		summarizeBy: sum
+		sourceColumn: Tempo Ligado do Efficiency Manager™ Automático (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo Ligado do Efficiency Manager™ Manual (h)'
+		dataType: double
+		lineageTag: 9e7437cb-c688-4876-826c-13a34e4b2604
+		summarizeBy: sum
+		sourceColumn: Tempo Ligado do Efficiency Manager™ Manual (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Harvest Smart Desligado (h)'
+		dataType: double
+		lineageTag: ffb183d5-5699-4f89-aba1-d941d19dd890
+		summarizeBy: sum
+		sourceColumn: Harvest Smart Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Harvest Smart Ligado (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 30d6893c-f86f-4fe4-a67f-2aafbb3b3d4d
+		summarizeBy: sum
+		sourceColumn: Harvest Smart Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Harvest Smart Ligado (h)'
+		dataType: double
+		lineageTag: d2490f4b-fd51-4a24-87c6-d0b1032f362d
+		summarizeBy: sum
+		sourceColumn: Harvest Smart Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Uso do SmartClean Desligado (h)'
+		dataType: double
+		lineageTag: bc054a69-ec76-4d76-b0c2-afaac9dbd577
+		summarizeBy: sum
+		sourceColumn: Uso do SmartClean Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Uso do SmartClean Ligado (%)'
+		dataType: double
+		lineageTag: f6ad657b-f9bb-4198-b353-85ad719172a2
+		summarizeBy: sum
+		sourceColumn: Uso do SmartClean Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Uso do SmartClean Ligado (h)'
+		dataType: double
+		lineageTag: b7dff115-7754-45a4-b323-66aff84797ef
+		summarizeBy: sum
+		sourceColumn: Uso do SmartClean Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise automático Desligado (h)'
+		dataType: double
+		lineageTag: 06f3d7fe-fc25-4b2b-a4c0-200828c13625
+		summarizeBy: sum
+		sourceColumn: FieldCruise automático Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise automático Ligado (%)'
+		dataType: double
+		lineageTag: db105f7d-1d92-4026-b61e-13f9602dbd1f
+		summarizeBy: sum
+		sourceColumn: FieldCruise automático Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise automático Ligado (h)'
+		dataType: double
+		lineageTag: 9aeb435d-8f9c-4a22-ad30-fbdaf8f05baf
+		summarizeBy: sum
+		sourceColumn: FieldCruise automático Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise™ Desligado (h)'
+		dataType: double
+		lineageTag: 4516796a-47ad-4d0e-ab58-84a3ad7c4d87
+		summarizeBy: sum
+		sourceColumn: FieldCruise™ Desligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise™ Ligado (%)'
+		dataType: double
+		lineageTag: 249380f3-51fa-422f-b87e-2b260b38e0bd
+		summarizeBy: sum
+		sourceColumn: FieldCruise™ Ligado (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FieldCruise™ Ligado (h)'
+		dataType: double
+		lineageTag: af69fbd1-ca33-4ace-b024-1f35e17e08ad
+		summarizeBy: sum
+		sourceColumn: FieldCruise™ Ligado (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AutoTrac™ Ativo (%)'
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 3e1b6292-c808-451d-bb82-c2c81d599bcd
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AutoTrac™ Ativo (h)'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 4dee3527-3734-48ff-aadf-7d0a847ce6a8
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AutoTrac™ Inativa (h)'
+		dataType: double
+		lineageTag: aaa337b0-fc4f-4bd7-b95a-0226f5ecd3ed
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AutoTrac™ RowSense™ Ativo (%)'
+		dataType: double
+		lineageTag: 71892fb7-2396-464f-93c7-98589a780844
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ RowSense™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AutoTrac™ RowSense™ Ativo (h)'
+		dataType: double
+		lineageTag: ae93e2de-f041-42d3-9bfc-233924c9d2b4
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ RowSense™ Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AutoTrac™ RowSense™ Inativa (h)'
+		dataType: double
+		lineageTag: 6301939d-f025-4390-a617-dc10624794e2
+		summarizeBy: sum
+		sourceColumn: AutoTrac™ RowSense™ Inativa (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sincronismo da Máquina Guia Inativo (h)'
+		dataType: double
+		lineageTag: c9a08f51-7824-420e-b8cb-af1f84554e2b
+		summarizeBy: sum
+		sourceColumn: Sincronismo da Máquina Guia Inativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sincronismo da Máquina Líder Ativo (%)'
+		dataType: double
+		lineageTag: 55b0c6fe-b4ad-4b7e-9ea7-0bc34cef7acb
+		summarizeBy: sum
+		sourceColumn: Sincronismo da Máquina Líder Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sincronismo da Máquina Líder Ativo (h)'
+		dataType: double
+		lineageTag: 533fcdfa-b4b6-4d4a-8963-4e84a9e38d27
+		summarizeBy: sum
+		sourceColumn: Sincronismo da Máquina Líder Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sincronismo da Máquina Seguidor Ativo (h)'
+		dataType: double
+		lineageTag: ea9ed453-50f5-4713-95cb-58aa75a3e0b6
+		summarizeBy: sum
+		sourceColumn: Sincronismo da Máquina Seguidor Ativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sincronismo da Máquina Seguidor Inativo (h)'
+		dataType: double
+		lineageTag: ff7f353b-259a-47b4-b7c0-fa46ba279133
+		summarizeBy: sum
+		sourceColumn: Sincronismo da Máquina Seguidor Inativo (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ano - Data Final'
+		dataType: int64
+		lineageTag: 15b15892-35be-4f35-9a01-101763d2c34e
+		summarizeBy: sum
+		sourceColumn: Ano - Data Final
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Nome do Mês - Data Final'
+		dataType: string
+		lineageTag: 8f3305e0-21bc-4a9b-8cb6-a5c2d64f1d62
+		summarizeBy: none
+		sourceColumn: Nome do Mês - Data Final
+		sortByColumn: 'Mês - Data Final'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês - Data Final'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b10d9c7-e7c3-401a-8df8-19b0fd9936c5
+		summarizeBy: sum
+		sourceColumn: Mês - Data Final
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Horas de Operação do Motor Período (h)'
+		dataType: string
+		lineageTag: 49563ce9-a9f6-473a-a68f-0dadf69b6043
+		summarizeBy: none
+		sourceColumn: Horas de Operação do Motor Período (h)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Horas de Operação do Motor Vida Útil (h)'
+		dataType: string
+		lineageTag: d7a50366-a43b-4f77-9710-0b4f366c5cf1
+		summarizeBy: none
+		sourceColumn: Horas de Operação do Motor Vida Útil (h)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Utilização Ocioso (%)'
+		dataType: double
+		lineageTag: ea3ca12e-d101-4a1e-a3fa-1ef6c18cbc68
+		summarizeBy: sum
+		sourceColumn: Utilização Ocioso (%)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Utilização Ocioso (h)'
+		dataType: double
+		lineageTag: 33ab6fec-9eea-4398-aefd-7d45a8871bb7
+		summarizeBy: sum
+		sourceColumn: Utilização Ocioso (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Utilização Trabalho (h)'
+		dataType: double
+		lineageTag: 9e81d86f-9c68-4913-9966-b92e4fb07279
+		summarizeBy: sum
+		sourceColumn: Utilização Trabalho (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Utilização Trabalho (%)'
+		dataType: double
+		lineageTag: a7dfb1e7-b0e7-487f-a733-defadf319d7a
+		summarizeBy: sum
+		sourceColumn: Utilização Trabalho (%)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Utilização Transporte (h)'
+		dataType: double
+		lineageTag: d5a3f772-3bb1-4125-847b-890291e8fef0
+		summarizeBy: sum
+		sourceColumn: Utilização Transporte (h)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Utilização Transporte (%)'
+		dataType: double
+		lineageTag: 0f4e9fa5-4ff4-4155-95fd-8cde7f78de60
+		summarizeBy: sum
+		sourceColumn: Utilização Transporte (%)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition f_UtilizacaoTecnologia = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(Web.Contents("https://alvorada365-my.sharepoint.com/personal/thanizerodrigues_alvorada-rs_com_br/Documents/%C3%81rea%20de%20Trabalho/utiliza%C3%A7%C3%A3o%20de%20tecnologias/ACOMPANHAMENTO%20MENSAL/base_dados.xlsx"), null, true),
+				    Plan1_Sheet = Fonte{[Item="Plan1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Plan1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Máquina", type text}, {"Modelo", type text}, {"Tipo", type text}, {"Número de Série da Máquina", type text}, {"Organização", type text}, {"ID da Organização", Int64.Type}, {"Data de Início", type datetime}, {"Data Final", type datetime}, {"Ground Speed Automation™ Ativo (%)", Percentage.Type}, {"Ground Speed Automation™ Ativo (h)", type number}, {"Ground Speed Automation™ Inativa (h)", type number}, {"Harvest Settings Automation™ Ativo (%)", type number}, {"Harvest Settings Automation™ Ativo (h)", type number}, {"Harvest Settings Automation™ Inativa (h)", type number}, {"ActiveYield™ Desligado (h)", type number}, {"ActiveYield™ Ligado (%)", Percentage.Type}, {"ActiveYield™ Ligado (h)", type number}, {"Pulsante Ativo (%)", Percentage.Type}, {"Pulsante Ativo (h)", type number}, {"Pulsante Inativa (h)", type number}, {"See & Spray™ Ativo (%)", Percentage.Type}, {"See & Spray™ Ativo (h)", type number}, {"See & Spray™ Inativa (h)", type number}, {"Active Terrain Adjustment™ Desligado (h)", type number}, {"Active Terrain Adjustment™ Ligado (%)", Percentage.Type}, {"Active Terrain Adjustment™ Ligado (h)", type number}, {"Auto Maintain Desligado (h)", type number}, {"Auto Maintain Ligado (%)", Percentage.Type}, {"Auto Maintain Ligado (h)", type number}, {"Tempo de Controle de Seção Ativo (%)", Percentage.Type}, {"Tempo de Controle de Seção Ativo (h)", type number}, {"Tempo de Controle de Seção Inativa (h)", type number}, {"Tempo Ligado do Efficiency Manager™ Automático (%)", Percentage.Type}, {"Tempo Ligado do Efficiency Manager™ Automático (h)", type number}, {"Tempo Ligado do Efficiency Manager™ Manual (h)", type number}, {"Harvest Smart Desligado (h)", type number}, {"Harvest Smart Ligado (%)", Percentage.Type}, {"Harvest Smart Ligado (h)", type number}, {"Uso do SmartClean Desligado (h)", type number}, {"Uso do SmartClean Ligado (%)", Percentage.Type}, {"Uso do SmartClean Ligado (h)", type number}, {"FieldCruise automático Desligado (h)", type number}, {"FieldCruise automático Ligado (%)", Percentage.Type}, {"FieldCruise automático Ligado (h)", type number}, {"FieldCruise™ Desligado (h)", type number}, {"FieldCruise™ Ligado (%)", Percentage.Type}, {"FieldCruise™ Ligado (h)", type number}, {"AutoTrac™ Ativo (%)", type number}, {"AutoTrac™ Ativo (h)", type number}, {"AutoTrac™ Inativa (h)", type number}, {"AutoTrac™ RowSense™ Ativo (%)", Percentage.Type}, {"AutoTrac™ RowSense™ Ativo (h)", type number}, {"AutoTrac™ RowSense™ Inativa (h)", type number}, {"Sincronismo da Máquina Guia Inativo (h)", type number}, {"Sincronismo da Máquina Líder Ativo (%)", Percentage.Type}, {"Sincronismo da Máquina Líder Ativo (h)", type number}, {"Sincronismo da Máquina Seguidor Ativo (h)", type number}, {"Sincronismo da Máquina Seguidor Inativo (h)", type number}}),
+				    #"Ano Inserido" = Table.AddColumn(#"Tipo Alterado", "Ano", each Date.Year([Data Final]), Int64.Type),
+				    #"Coluna Renomeada - Ano" = Table.RenameColumns(#"Ano Inserido",{{"Ano", "Ano - Data Final"}}),
+				    #"Nome do Mês Inserido" = Table.AddColumn(#"Coluna Renomeada - Ano", "Nome do Mês", each Date.MonthName([Data Final]), type text),
+				    #"Coluna Renomeada - Nome mês" = Table.RenameColumns(#"Nome do Mês Inserido",{{"Nome do Mês", "Nome do Mês - Data Final"}}),
+				    #"Mês Inserido" = Table.AddColumn(#"Coluna Renomeada - Nome mês", "Mês", each Date.Month([Data Final]), Int64.Type),
+				    #"Coluna Renomeada - Mês" = Table.RenameColumns(#"Mês Inserido",{{"Mês", "Mês - Data Final"}}),
+				    #"Texto Extraído Antes do Delimitador" = Table.TransformColumns(#"Coluna Renomeada - Mês", {{"Tipo", each Text.BeforeDelimiter(_, " "), type text}}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Texto Extraído Antes do Delimitador",{{"Utilização Trabalho (h)", type number}, {"Utilização Transporte (h)", type number}, {"Utilização Ocioso (%)", type number}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

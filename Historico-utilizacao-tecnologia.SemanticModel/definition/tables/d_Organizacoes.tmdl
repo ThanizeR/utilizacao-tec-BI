@@ -1,0 +1,57 @@
+table d_Organizacoes
+	lineageTag: 90ccf729-0eb3-4e89-a92f-c69bac014a42
+
+	column Organização
+		dataType: string
+		lineageTag: fb9e1342-a299-4e07-a6e2-b28e878f270f
+		summarizeBy: none
+		sourceColumn: Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID da Organização'
+		dataType: int64
+		formatString: 0
+		lineageTag: 458547cd-ecee-4ef0-8117-9436da3c06a3
+		summarizeBy: none
+		sourceColumn: ID da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tatica - Embaixador' = LOOKUPVALUE(f_Taticas[Tática], 'f_Taticas'[ID da Organização], 'd_Organizacoes'[ID da Organização], 'f_Taticas'[Tática], "Embaixador Deeregital")
+		lineageTag: f3b82058-d62d-4943-9926-aadc19229f31
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tatica - SmartFarm' = LOOKUPVALUE(f_Taticas[Tática], 'f_Taticas'[ID da Organização], 'd_Organizacoes'[ID da Organização], 'f_Taticas'[Tática], "Smart Farm")
+		lineageTag: 35bfde9e-0b07-4ca5-9188-4eb476002b64
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tatica - Mapeadas' = LOOKUPVALUE(f_Taticas[Tática], 'f_Taticas'[ID da Organização], 'd_Organizacoes'[ID da Organização], 'f_Taticas'[Tática], "Organizações Mapeadas")
+		lineageTag: 581ea98a-e835-4789-b1d1-2b29ba5ed815
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_Organizacoes = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(Web.Contents("https://alvorada365-my.sharepoint.com/personal/thanizerodrigues_alvorada-rs_com_br/Documents/%C3%81rea%20de%20Trabalho/utiliza%C3%A7%C3%A3o%20de%20tecnologias/ACOMPANHAMENTO%20MENSAL/organizacoes_referentes.xlsx"), null, true),
+				    Plan1_Sheet = Fonte{[Item="Plan1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Plan1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Organização", type text}, {"ID da Organização", Int64.Type}, {"Tática", type text}}),
+				    #"Texto Extraído Antes do Delimitador" = Table.TransformColumns(#"Tipo Alterado", {{"Organização", each Text.BeforeDelimiter(_, "("), type text}}),
+				    #"Linhas Classificadas" = Table.Sort(#"Texto Extraído Antes do Delimitador",{{"Organização", Order.Ascending}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Linhas Classificadas",{"Tática"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas", {"ID da Organização"})
+				in
+				    #"Duplicatas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

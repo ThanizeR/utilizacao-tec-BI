@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Historico-utilizacao-tecnologia"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8521ae5f-ab98-4b98-8db8-fbe4259d8f0f"
+  }
+}

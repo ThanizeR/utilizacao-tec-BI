@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 605,
+            "y": 293.09999847412109
+          },
+          "nodeIndex": "f_UtilizacaoTecnologia",
+          "nodeLineageTag": "fab81f4e-18a3-4bee-be07-bb1d26d75069",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 364.5
+          },
+          "nodeIndex": "f_Taticas",
+          "nodeLineageTag": "bac86093-64e0-4bcd-95ec-ce6cb63df7d1",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 282,
+            "y": 0
+          },
+          "nodeIndex": "d_Organizacoes",
+          "nodeLineageTag": "90ccf729-0eb3-4e89-a92f-c69bac014a42",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 600.99999618530273,
+            "y": 0
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "f12ab9d4-a0c0-4011-89e4-af54fc7a0400",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
