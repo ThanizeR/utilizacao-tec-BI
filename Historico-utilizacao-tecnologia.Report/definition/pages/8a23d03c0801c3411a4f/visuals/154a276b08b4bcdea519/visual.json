@@ -1,0 +1,113 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "154a276b08b4bcdea519",
+  "position": {
+    "x": 533.63636363636363,
+    "y": 129.09090909090909,
+    "z": 1000,
+    "height": 271.81818181818181,
+    "width": 434.5454545454545,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Ano - Data Final"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Ano - Data Final",
+              "nativeQueryRef": "Ano - Data Final",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Nome do Mês - Data Final"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Nome do Mês - Data Final",
+              "nativeQueryRef": "Nome do Mês - Data Final",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Tempo Ligado do Efficiency Manager™ Automático (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(f_UtilizacaoTecnologia.Tempo Ligado do Efficiency Manager™ Automático (%))",
+              "nativeQueryRef": "Efficiency Manager™ Automático (%)",
+              "displayName": "Efficiency Manager™ Automático (%)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#109E3B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.Tempo Ligado do Efficiency Manager™ Automático (%))"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

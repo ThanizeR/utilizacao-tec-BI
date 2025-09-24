@@ -1,0 +1,130 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "dd94403dd21104b998be",
+  "position": {
+    "x": 994,
+    "y": 129,
+    "z": 4000,
+    "height": 272,
+    "width": 268,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Número de Série da Máquina"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Número de Série da Máquina",
+              "nativeQueryRef": "Número de Série da Máquina",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Active Terrain Adjustment™ Ligado (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(f_UtilizacaoTecnologia.Active Terrain Adjustment™ Ligado (%))",
+              "nativeQueryRef": "Active Terrain Adjustment™ Ligado (%)",
+              "displayName": "Active Terrain Adjustment™ Ligado (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "f_UtilizacaoTecnologia"
+                      }
+                    },
+                    "Property": "Active Terrain Adjustment™ Ligado (%)"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4FB582'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

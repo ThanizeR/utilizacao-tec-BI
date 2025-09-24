@@ -1,0 +1,178 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "b3f0b573eaaa08a45359",
+  "position": {
+    "x": 71,
+    "y": 426,
+    "z": 2000,
+    "height": 273,
+    "width": 439,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Modelo"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Modelo",
+              "nativeQueryRef": "Modelo",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Pulsante Ativo (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(f_UtilizacaoTecnologia.Pulsante Ativo (%))",
+              "nativeQueryRef": "Pulsante Ativo (%)",
+              "displayName": "Pulsante Ativo (%)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Tempo de Controle de Seção Ativo (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(f_UtilizacaoTecnologia.Tempo de Controle de Seção Ativo (%))",
+              "nativeQueryRef": "Controle de Seção Ativo (%)",
+              "displayName": "Controle de Seção Ativo (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "f_UtilizacaoTecnologia"
+                      }
+                    },
+                    "Property": "Pulsante Ativo (%)"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "detailColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "detailBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6DF21A'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Avg(f_UtilizacaoTecnologia.Pulsante Ativo (%))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4FB582'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Avg(f_UtilizacaoTecnologia.Tempo de Controle de Seção Ativo (%))"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

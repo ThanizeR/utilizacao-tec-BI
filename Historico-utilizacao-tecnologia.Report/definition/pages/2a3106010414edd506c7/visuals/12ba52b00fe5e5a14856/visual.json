@@ -1,0 +1,232 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "12ba52b00fe5e5a14856",
+  "position": {
+    "x": 700,
+    "y": 425.45454545454544,
+    "z": 0,
+    "height": 274.5454545454545,
+    "width": 561.81818181818176
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Ano - Data Final"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Ano - Data Final",
+              "nativeQueryRef": "Soma de Ano - Data Final",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "f_UtilizacaoTecnologia"
+                    }
+                  },
+                  "Property": "Nome do Mês - Data Final"
+                }
+              },
+              "queryRef": "f_UtilizacaoTecnologia.Nome do Mês - Data Final",
+              "nativeQueryRef": "Nome do Mês - Data Final",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "AutoTrac™ Ativo (h)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(f_UtilizacaoTecnologia.AutoTrac™ Ativo (h))",
+              "nativeQueryRef": " AutoTrac™ Ativo (h)",
+              "displayName": " AutoTrac™ Ativo (h)"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "AutoTrac™ Ativo (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(f_UtilizacaoTecnologia.AutoTrac™ Ativo (%))",
+              "nativeQueryRef": "AutoTrac™ Ativo (%)",
+              "displayName": "AutoTrac™ Ativo (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "f_UtilizacaoTecnologia"
+                  }
+                },
+                "Property": "Ano - Data Final"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "f_UtilizacaoTecnologia"
+                  }
+                },
+                "Property": "Nome do Mês - Data Final"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#109E3B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.AutoTrac™ Ativo (h))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6DF21A'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.AutoTrac™ Ativo (%))"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Utilização de AutoTrac™ Ativo (h) / AutoTrac™ Ativo (%)'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

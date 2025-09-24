@@ -1,0 +1,170 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "bd2cbabac610370c84c8",
+  "position": {
+    "x": 533,
+    "y": 423,
+    "z": 5000,
+    "height": 280,
+    "width": 435,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "d_Organizacoes"
+                    }
+                  },
+                  "Property": "Organização"
+                }
+              },
+              "queryRef": "d_Organizacoes.Organização",
+              "nativeQueryRef": "Organização",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Harvest Smart Ligado (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(f_UtilizacaoTecnologia.Harvest Smart Ligado (%))",
+              "nativeQueryRef": "Harvest Smart Ligado (%)",
+              "displayName": "Harvest Smart Ligado (%)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_UtilizacaoTecnologia"
+                        }
+                      },
+                      "Property": "Active Terrain Adjustment™ Ligado (%)"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(f_UtilizacaoTecnologia.Active Terrain Adjustment™ Ligado (%))",
+              "nativeQueryRef": "Active Terrain Adjustment™ Ligado (%)",
+              "displayName": "Active Terrain Adjustment™ Ligado (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "f_UtilizacaoTecnologia"
+                      }
+                    },
+                    "Property": "Harvest Smart Ligado (%)"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "detailColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4FB582'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Avg(f_UtilizacaoTecnologia.Active Terrain Adjustment™ Ligado (%))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6DF21A'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Avg(f_UtilizacaoTecnologia.Harvest Smart Ligado (%))"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
