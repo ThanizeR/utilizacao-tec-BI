@@ -19,7 +19,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'fundo Tratores.png'"
+                    "Value": "'3.png'"
                   }
                 }
               },
@@ -28,14 +28,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "fundo_Tratores3939730155630168.png"
+                    "ItemName": "36457899853216149.png"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "'Fill'"
                   }
                 }
               }

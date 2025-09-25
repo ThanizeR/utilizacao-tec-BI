@@ -6,8 +6,7 @@
     "y": 129,
     "z": 1000,
     "height": 272,
-    "width": 435,
-    "tabOrder": 1000
+    "width": 435
   },
   "visual": {
     "visualType": "lineChart",
@@ -110,5 +109,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2e53606438c98c34d20d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "f_UtilizacaoTecnologia"
+              }
+            },
+            "Property": "Ano - Data Final"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7138cc895480350a8c3a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "f_UtilizacaoTecnologia"
+              }
+            },
+            "Property": "Nome do Mês - Data Final"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e3571443699df9365108",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "f_UtilizacaoTecnologia"
+                  }
+                },
+                "Property": "Harvest Smart Ligado (%)"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

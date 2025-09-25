@@ -522,7 +522,7 @@ table f_UtilizacaoTecnologia
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column 'Sincronismo da Máquina Guia Inativo (h)'
-		dataType: double
+		dataType: int64
 		lineageTag: c9a08f51-7824-420e-b8cb-af1f84554e2b
 		summarizeBy: sum
 		sourceColumn: Sincronismo da Máquina Guia Inativo (h)
@@ -542,7 +542,7 @@ table f_UtilizacaoTecnologia
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column 'Sincronismo da Máquina Líder Ativo (h)'
-		dataType: double
+		dataType: int64
 		lineageTag: 533fcdfa-b4b6-4d4a-8963-4e84a9e38d27
 		summarizeBy: sum
 		sourceColumn: Sincronismo da Máquina Líder Ativo (h)
@@ -552,7 +552,7 @@ table f_UtilizacaoTecnologia
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column 'Sincronismo da Máquina Seguidor Ativo (h)'
-		dataType: double
+		dataType: int64
 		lineageTag: ea9ed453-50f5-4713-95cb-58aa75a3e0b6
 		summarizeBy: sum
 		sourceColumn: Sincronismo da Máquina Seguidor Ativo (h)
@@ -562,7 +562,7 @@ table f_UtilizacaoTecnologia
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column 'Sincronismo da Máquina Seguidor Inativo (h)'
-		dataType: double
+		dataType: int64
 		lineageTag: ff7f353b-259a-47b4-b7c0-fa46ba279133
 		summarizeBy: sum
 		sourceColumn: Sincronismo da Máquina Seguidor Inativo (h)
@@ -602,10 +602,13 @@ table f_UtilizacaoTecnologia
 		annotation SummarizationSetBy = Automatic
 
 	column 'Horas de Operação do Motor Período (h)'
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 49563ce9-a9f6-473a-a68f-0dadf69b6043
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Horas de Operação do Motor Período (h)
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
@@ -655,8 +658,6 @@ table f_UtilizacaoTecnologia
 		summarizeBy: sum
 		sourceColumn: Utilização Trabalho (%)
 
-		changedProperty = DataType
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -677,11 +678,107 @@ table f_UtilizacaoTecnologia
 		summarizeBy: sum
 		sourceColumn: Utilização Transporte (%)
 
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AutoPath™ Ativo (%)'
+		dataType: int64
+		formatString: 0
+		lineageTag: b2f144af-2a61-43d9-a5f0-6028f885fd8d
+		summarizeBy: sum
+		sourceColumn: AutoPath™ Ativo (%)
+
 		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'AutoPath™ Ativo (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a20018e8-e39b-48d3-8b35-2cb371132fb9
+		summarizeBy: sum
+		sourceColumn: AutoPath™ Ativo (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AutoPath™ Inativa (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 347a430a-8823-4cbd-bb04-71cfd48610e5
+		summarizeBy: sum
+		sourceColumn: AutoPath™ Inativa (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Automação de Curva do AutoTrac™ Ativo (%)'
+		dataType: double
+		lineageTag: 62eacef1-d816-42e5-9478-3f292b661934
+		summarizeBy: sum
+		sourceColumn: Automação de Curva do AutoTrac™ Ativo (%)
+
+		annotation SummarizationSetBy = Automatic
+
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Automação de Curva do AutoTrac™ Ativo (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9da0b007-3a98-4bae-bc19-50842e14b890
+		summarizeBy: sum
+		sourceColumn: Automação de Curva do AutoTrac™ Ativo (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Automação de Curva do AutoTrac™ Inativa (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: f98930f6-f2db-47e0-9c31-fc1831b65d3a
+		summarizeBy: sum
+		sourceColumn: Automação de Curva do AutoTrac™ Inativa (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 52880c02-fb49-4b8d-baa7-28a077d82528
+		summarizeBy: sum
+		sourceColumn: Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direcionamento Passivo de Implemento AutoTrac™ Ativo (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ff6ad6b-6ad8-45a5-b8d6-d1862b318a23
+		summarizeBy: sum
+		sourceColumn: Direcionamento Passivo de Implemento AutoTrac™ Ativo (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direcionamento Passivo de Implemento AutoTrac™ Inativa (h)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 601bd30b-c2da-4b1e-9090-843f9e23062f
+		summarizeBy: sum
+		sourceColumn: Direcionamento Passivo de Implemento AutoTrac™ Inativa (h)
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
 
 	partition f_UtilizacaoTecnologia = m
 		mode: import
@@ -698,7 +795,7 @@ table f_UtilizacaoTecnologia
 				    #"Mês Inserido" = Table.AddColumn(#"Coluna Renomeada - Nome mês", "Mês", each Date.Month([Data Final]), Int64.Type),
 				    #"Coluna Renomeada - Mês" = Table.RenameColumns(#"Mês Inserido",{{"Mês", "Mês - Data Final"}}),
 				    #"Texto Extraído Antes do Delimitador" = Table.TransformColumns(#"Coluna Renomeada - Mês", {{"Tipo", each Text.BeforeDelimiter(_, " "), type text}}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Texto Extraído Antes do Delimitador",{{"Utilização Trabalho (h)", type number}, {"Utilização Transporte (h)", type number}, {"Utilização Ocioso (%)", type number}})
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Texto Extraído Antes do Delimitador",{{"Utilização Trabalho (h)", type number}, {"Utilização Transporte (h)", type number}, {"Utilização Ocioso (%)", Percentage.Type}, {"Sincronismo da Máquina Seguidor Inativo (h)", Int64.Type}, {"Sincronismo da Máquina Seguidor Ativo (h)", Int64.Type}, {"Sincronismo da Máquina Líder Ativo (h)", Int64.Type}, {"Sincronismo da Máquina Guia Inativo (h)", Int64.Type}, {"Utilização Trabalho (%)", Percentage.Type}, {"Utilização Transporte (%)", Percentage.Type}, {"AutoPath™ Ativo (%)", Percentage.Type}, {"Automação de Curva do AutoTrac™ Ativo (%)", Percentage.Type}, {"Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)", Percentage.Type}})
 				in
 				    #"Tipo Alterado1"
 

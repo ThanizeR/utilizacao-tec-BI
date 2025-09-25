@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "fda3f2817a2de10deb13",
   "displayName": "Página Inicial",
-  "displayOption": "ActualSize",
+  "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
   "objects": {
@@ -45,7 +45,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Capa inicial.png'"
+                    "Value": "'1.png'"
                   }
                 }
               },
@@ -54,14 +54,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Capa_inicial2158060453928342.png"
+                    "ItemName": "107258080713065196.png"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "'Fill'"
                   }
                 }
               }

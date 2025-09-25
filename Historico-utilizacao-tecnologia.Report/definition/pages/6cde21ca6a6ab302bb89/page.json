@@ -27,7 +27,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Colheitadeiras.png'"
+                    "Value": "'5.png'"
                   }
                 }
               },
@@ -36,14 +36,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Colheitadeiras531994936373149.png"
+                    "ItemName": "58510310278690928.png"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "'Fill'"
                   }
                 }
               }
