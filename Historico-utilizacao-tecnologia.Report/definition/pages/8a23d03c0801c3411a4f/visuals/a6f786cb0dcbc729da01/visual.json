@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 275.45454545454544,
     "width": 434.5454545454545,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -161,6 +161,19 @@
           },
           "selector": {
             "metadata": "Avg(f_UtilizacaoTecnologia.Tempo Ligado do Efficiency Manager™ Automático (%))"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

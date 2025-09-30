@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 2
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 5
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
@@ -58,11 +58,88 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 944.71428571428578,
+            "y": 287.978570665632
+          },
+          "nodeIndex": "f_Emparelhamento",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 275.85714285714317,
+            "y": 479.12142780848922
+          },
+          "nodeIndex": "d_Máquinas",
+          "nodeLineageTag": "f6cc7de0-b792-4fe9-bed1-dbb1d3b310a8",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 498.71428571428567,
+            "y": 767.7035710471016
+          },
+          "nodeIndex": "f_Preparo de Solo",
+          "nodeLineageTag": "9155e5d7-b14f-4302-8f6b-25cbac440091",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 751.57142857142878,
+            "y": 765.28035695212213
+          },
+          "nodeIndex": "f_plantio",
+          "nodeLineageTag": "60cf4ddc-e830-48f8-b5b2-8ecec0ecba06",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1005.8571428571424,
+            "y": 765.28035695212236
+          },
+          "nodeIndex": "f_aplicacao",
+          "nodeLineageTag": "05e71116-6fc2-4873-a85b-8513df0b7d0b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1261.285714285714,
+            "y": 765.28035695212236
+          },
+          "nodeIndex": "f_colheita",
+          "nodeLineageTag": "3e73a809-cb45-4a1f-9127-6c93db015a05",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 70,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

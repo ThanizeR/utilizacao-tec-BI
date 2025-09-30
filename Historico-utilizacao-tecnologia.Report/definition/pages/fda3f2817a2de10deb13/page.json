@@ -45,7 +45,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.png'"
+                    "Value": "'1.jpg'"
                   }
                 }
               },
@@ -54,14 +54,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "107258080713065196.png"
+                    "ItemName": "15027596455649602.jpg"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fill'"
+                    "Value": "'Normal'"
                   }
                 }
               }

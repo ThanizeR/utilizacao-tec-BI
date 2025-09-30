@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["f_Taticas","f_UtilizacaoTecnologia","d_Organizacoes"]
+annotation PBI_QueryOrder = ["f_Taticas","f_UtilizacaoTecnologia","d_Organizacoes","f_Emparelhamento","d_Máquinas","f_Preparo de Solo","f_plantio","f_aplicacao","f_colheita"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -18,6 +18,23 @@ ref table LocalDateTable_581468d7-fffe-49fa-8b40-db762124923d
 ref table LocalDateTable_2c7aff08-41b2-4057-9e3e-ea89123b94b1
 ref table d_Organizacoes
 ref table Medidas
+ref table f_Emparelhamento
+ref table DateTableTemplate_974503c1-0023-4319-add1-f345973a9bdc
+ref table LocalDateTable_30170340-45e0-4f52-91bd-f099011aec16
+ref table LocalDateTable_6a959127-f520-4fb2-9e5f-d0fec3292730
+ref table d_Máquinas
+ref table 'f_Preparo de Solo'
+ref table LocalDateTable_312cb8d0-2151-4193-aef0-8c1f109f6c2b
+ref table LocalDateTable_8c76c42c-6b53-4b3f-a4e6-9bfb5fd548d6
+ref table f_plantio
+ref table LocalDateTable_a6eccfa6-8831-417a-b2d6-3e5a5a2eb4b7
+ref table LocalDateTable_aff05b81-35b0-4509-b668-b46391c756e3
+ref table f_aplicacao
+ref table LocalDateTable_a2e4db3e-ab18-4d86-9b90-b6947922928e
+ref table LocalDateTable_916e637e-766f-4aa1-acd1-33f3ec417013
+ref table f_colheita
+ref table LocalDateTable_bca99b68-a108-400d-80b8-1f6a7a9ead24
+ref table LocalDateTable_b1431ee4-c6c7-44e2-bd7e-628af3919147
 
 ref cultureInfo pt-BR
 

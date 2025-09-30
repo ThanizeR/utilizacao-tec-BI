@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 271.81818181818181,
     "width": 271.81818181818181,
-    "tabOrder": 2000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -118,6 +118,19 @@
                       "Value": "'#4FB582'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

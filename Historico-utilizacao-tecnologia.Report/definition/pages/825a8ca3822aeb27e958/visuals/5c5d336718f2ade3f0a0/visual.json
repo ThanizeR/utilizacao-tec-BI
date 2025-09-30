@@ -7,7 +7,7 @@
     "z": 12000,
     "height": 267.5,
     "width": 261.25,
-    "tabOrder": 12000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -114,10 +114,24 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#4FB582'"
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": -0.5
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -126,42 +140,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "60af62f0e161bf07d0c4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Organização"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c825a12e1ba2bf616c53",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Sincronismo da Máquina Líder Ativo (%)"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

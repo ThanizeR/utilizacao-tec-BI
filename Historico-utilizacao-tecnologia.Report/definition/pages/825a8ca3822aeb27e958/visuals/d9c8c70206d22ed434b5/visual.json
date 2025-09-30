@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "d9c8c70206d22ed434b5",
   "position": {
-    "x": 685,
-    "y": 128.75,
+    "x": 532.90640394088666,
+    "y": 131.23152709359607,
     "z": 10000,
-    "height": 267.5,
-    "width": 285,
-    "tabOrder": 10000
+    "height": 267.78325123152712,
+    "width": 437.14285714285717,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -115,9 +115,22 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4FB582'"
+                      "Value": "'#FAEE00'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -126,42 +139,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9a28722b9eea6016a506",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Organização"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e08cbbf7e5d129f4d7a6",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "AutoPath™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

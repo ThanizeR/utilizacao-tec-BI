@@ -1,0 +1,322 @@
+table f_plantio
+	lineageTag: 60cf4ddc-e830-48f8-b5b2-8ecec0ecba06
+
+	column Clientes
+		dataType: string
+		lineageTag: 84619889-0df0-4df8-90d7-f0abafb7e5c4
+		summarizeBy: none
+		sourceColumn: Clientes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fazendas
+		dataType: string
+		lineageTag: 72e29b8d-cc28-47e6-a268-3f3f8e043df0
+		summarizeBy: none
+		sourceColumn: Fazendas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organizações
+		dataType: string
+		lineageTag: d11c8347-4856-4359-a36e-6fe1f49dc0e1
+		summarizeBy: none
+		sourceColumn: Organizações
+
+		annotation SummarizationSetBy = Automatic
+
+	column Talhões
+		dataType: string
+		lineageTag: 2093f76f-e96b-4030-94e6-07d85cfab97f
+		summarizeBy: none
+		sourceColumn: Talhões
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da Máquina'
+		dataType: string
+		lineageTag: 5c6f3865-a9fc-409b-aa58-54a316b6e721
+		summarizeBy: none
+		sourceColumn: Nome da Máquina
+
+		annotation SummarizationSetBy = Automatic
+
+	column Equipamento
+		dataType: string
+		lineageTag: df66a1ae-d1f3-486e-b30f-0f1bed80ac46
+		summarizeBy: none
+		sourceColumn: Equipamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Implementos
+		dataType: string
+		lineageTag: ba01e230-b613-4917-b07c-742c03e727d0
+		summarizeBy: none
+		sourceColumn: Implementos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Operadores
+		dataType: string
+		lineageTag: 98bd7e32-e5f7-4dd5-b969-c6b42c3fa2ae
+		summarizeBy: none
+		sourceColumn: Operadores
+
+		annotation SummarizationSetBy = Automatic
+
+	column Variedades
+		dataType: string
+		lineageTag: 8f107382-f479-46a4-b002-298ddba10f03
+		summarizeBy: none
+		sourceColumn: Variedades
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trabalho
+		dataType: string
+		lineageTag: f10f3253-c41e-4355-8360-15bfb7fb2d53
+		summarizeBy: none
+		sourceColumn: Trabalho
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Cultura'
+		dataType: string
+		lineageTag: b8c33f09-5e19-4b2b-8c04-5941b96f6f48
+		summarizeBy: none
+		sourceColumn: Tipo de Cultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Área Semeada - Ha'
+		dataType: double
+		lineageTag: 8b6d2a87-b632-4491-a3f7-4b00211063dc
+		summarizeBy: sum
+		sourceColumn: Área Semeada - Ha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Taxa Aplicada - sementes/ha'
+		dataType: string
+		lineageTag: d467d4f8-64c5-4c15-9168-9fd6dae98575
+		summarizeBy: none
+		sourceColumn: Taxa Aplicada - sementes/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Aplicado - kg'
+		dataType: string
+		lineageTag: 05018332-4aca-4f62-8ca9-c23e2e5c8a4f
+		summarizeBy: none
+		sourceColumn: Total Aplicado - kg
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa Alvo - kg/ha'
+		dataType: double
+		lineageTag: 2702dea9-1f45-4e77-a545-9c0698261e93
+		summarizeBy: sum
+		sourceColumn: Taxa Alvo - kg/ha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Alvo Total - kg'
+		dataType: double
+		lineageTag: f2121326-6bdc-4b8e-89f9-fe880726c5b7
+		summarizeBy: sum
+		sourceColumn: Alvo Total - kg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Eficiência Operacional - ha/hr'
+		dataType: string
+		lineageTag: 6c85547a-e6b7-4219-8e06-7a1c57aa4d57
+		summarizeBy: none
+		sourceColumn: Eficiência Operacional - ha/hr
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Combustível Total - l'
+		dataType: string
+		lineageTag: fa9eaa5b-2d08-429a-a3b1-3599268f4aca
+		summarizeBy: none
+		sourceColumn: Combustível Total - l
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Área) - l/ha'
+		dataType: string
+		lineageTag: 4d05efcd-344d-4815-ab97-d24f3243fbec
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Área) - l/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Tempo) - l/h'
+		dataType: string
+		lineageTag: fdc522dc-51fa-441e-aff6-47297d564e66
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Tempo) - l/h
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Singulação  -  %'
+		dataType: string
+		lineageTag: 9aaaabe1-5b9e-45ca-9175-8615f90768e5
+		summarizeBy: none
+		sourceColumn: Singulação  -  %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Saltos - %'
+		dataType: string
+		lineageTag: 39721c55-10ce-48c1-973c-18dfcd2da9e8
+		summarizeBy: none
+		sourceColumn: Saltos - %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Múltiplos - %'
+		dataType: string
+		lineageTag: 374ec9e9-707e-4f19-85cd-ed48c1d1f994
+		summarizeBy: none
+		sourceColumn: Múltiplos - %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CV do Espaçamento entre Sementes'
+		dataType: string
+		lineageTag: 711cc64d-726a-4db6-912e-b4b22f5deeae
+		summarizeBy: none
+		sourceColumn: CV do Espaçamento entre Sementes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qualidade Suspensão -%'
+		dataType: string
+		lineageTag: 3ea49ce5-649b-422d-92c9-e7c20f8cb5cf
+		summarizeBy: none
+		sourceColumn: Qualidade Suspensão -%
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Força Descendente Aplicada - N'
+		dataType: string
+		lineageTag: 4cc45186-c163-4053-bdd4-ddbe8c168b8e
+		summarizeBy: none
+		sourceColumn: Força Descendente Aplicada - N
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Margem da Roda Guia'
+		dataType: string
+		lineageTag: f6ebbb94-c988-4755-be1b-17ab9bf73744
+		summarizeBy: none
+		sourceColumn: Margem da Roda Guia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contato com o Solo'
+		dataType: string
+		lineageTag: cb8e2b51-6622-49d5-aad3-5be6f230d88a
+		summarizeBy: none
+		sourceColumn: Contato com o Solo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Velocidade - Km/h'
+		dataType: double
+		lineageTag: 3067c695-8d80-496c-b4f1-7d6100aab796
+		summarizeBy: sum
+		sourceColumn: Velocidade - Km/h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primeiro Semeado'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a084af42-5f66-4ee1-bec1-258f3e39202b
+		summarizeBy: none
+		sourceColumn: Primeiro Semeado
+
+		variation Variation
+			isDefault
+			relationship: 1cc9e8a4-1cad-4a1b-8b74-4c27f8dbc140
+			defaultHierarchy: LocalDateTable_a6eccfa6-8831-417a-b2d6-3e5a5a2eb4b7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Última Semeadura'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c00706d8-05ec-4752-a2c9-c37fd0b73b4f
+		summarizeBy: none
+		sourceColumn: Última Semeadura
+
+		variation Variation
+			isDefault
+			relationship: 62f178b2-8f2a-4355-b8b8-04445bb6fa8a
+			defaultHierarchy: LocalDateTable_aff05b81-35b0-4509-b668-b46391c756e3.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_plantio = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ThanizeRodrigues-Alv\OneDrive - Alvorada Sistemas Agrícolas Ltda\Área de Trabalho\utilização de tecnologias\ACOMPANHAMENTO MENSAL\Operação - Plantio.xlsx"), null, true),
+				    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Clientes", type text}, {"Fazendas", type text}, {"Organizações", type text}, {"Talhões", type text}, {"Nome da Máquina", type text}, {"Equipamento", type text}, {"Implementos", type text}, {"Operadores", type text}, {"Variedades", type text}, {"Trabalho", type text}, {"Tipo de Cultura", type text}, {"Área Semeada", type number}, {"Unidade", type text}, {"Taxa Aplicada", type any}, {"Unidade_1", type text}, {"Total Aplicado", type any}, {"Unidade_2", type text}, {"Taxa Alvo", type number}, {"Unidade_3", type text}, {"Alvo Total", type number}, {"Unidade_4", type text}, {"Eficiência Operacional", type any}, {"Unidade_5", type text}, {"Combustível Total", type any}, {"Unidade_6", type text}, {"Taxa de Combustível (Área)", type any}, {"Unidade_7", type text}, {"Taxa de Combustível (Tempo)", type any}, {"Unidade_8", type text}, {"Singulação", type text}, {"Unidade_9", type text}, {"Saltos", type text}, {"Unidade_10", type text}, {"Múltiplos", type text}, {"Unidade_11", type text}, {"CV do Espaçamento entre Sementes", type text}, {"Unidade_12", type text}, {"Qualidade Suspensão", type text}, {"Unidade_13", type text}, {"Força Descendente Aplicada", type text}, {"Unidade_14", type text}, {"Margem da Roda Guia", type text}, {"Unidade_15", type text}, {"Contato com o Solo", type text}, {"Unidade_16", type text}, {"Velocidade", type number}, {"Unidade_17", type text}, {"Tempo de Semeadura", type number}, {"Unidade_18", type text}, {"Primeiro Semeado", type datetime}, {"Última Semeadura", type datetime}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Área Semeada", "Área Semeada - Ha"}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Colunas Renomeadas",{"Unidade"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Colunas Removidas",{{"Taxa Aplicada", "Taxa Aplicada - sementes/ha"}}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Renomeadas1",{"Unidade_1"}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Colunas Removidas1",{{"Total Aplicado", "Total Aplicado - kg"}}),
+				    #"Colunas Removidas2" = Table.RemoveColumns(#"Colunas Renomeadas2",{"Unidade_2"}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Colunas Removidas2",{{"Taxa Alvo", "Taxa Alvo - kg/ha"}}),
+				    #"Colunas Removidas3" = Table.RemoveColumns(#"Colunas Renomeadas3",{"Unidade_3"}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Colunas Removidas3",{{"Alvo Total", "Alvo Total - kg"}}),
+				    #"Colunas Removidas4" = Table.RemoveColumns(#"Colunas Renomeadas4",{"Unidade_4"}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Colunas Removidas4",{{"Eficiência Operacional", "Eficiência Operacional - ha/hr"}}),
+				    #"Colunas Removidas5" = Table.RemoveColumns(#"Colunas Renomeadas5",{"Unidade_5"}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Colunas Removidas5",{{"Combustível Total", "Combustível Total - l"}}),
+				    #"Colunas Removidas6" = Table.RemoveColumns(#"Colunas Renomeadas6",{"Unidade_6"}),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Colunas Removidas6",{{"Taxa de Combustível (Área)", "Taxa de Combustível (Área) - l/ha"}}),
+				    #"Colunas Removidas7" = Table.RemoveColumns(#"Colunas Renomeadas7",{"Unidade_7"}),
+				    #"Colunas Renomeadas8" = Table.RenameColumns(#"Colunas Removidas7",{{"Taxa de Combustível (Tempo)", "Taxa de Combustível (Tempo) - l/h"}}),
+				    #"Colunas Removidas8" = Table.RemoveColumns(#"Colunas Renomeadas8",{"Unidade_8"}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Colunas Removidas8", each true),
+				    #"Colunas Renomeadas9" = Table.RenameColumns(#"Linhas Filtradas",{{"Singulação", "Singulação  -  %"}}),
+				    #"Colunas Removidas9" = Table.RemoveColumns(#"Colunas Renomeadas9",{"Unidade_9"}),
+				    #"Colunas Renomeadas10" = Table.RenameColumns(#"Colunas Removidas9",{{"Saltos", "Saltos - %"}}),
+				    #"Colunas Removidas10" = Table.RemoveColumns(#"Colunas Renomeadas10",{"Unidade_10"}),
+				    #"Colunas Renomeadas11" = Table.RenameColumns(#"Colunas Removidas10",{{"Múltiplos", "Múltiplos - %"}}),
+				    #"Colunas Removidas11" = Table.RemoveColumns(#"Colunas Renomeadas11",{"Unidade_11", "Unidade_12", "Unidade_13"}),
+				    #"Colunas Renomeadas12" = Table.RenameColumns(#"Colunas Removidas11",{{"Qualidade Suspensão", "Qualidade Suspensão -%"}, {"Força Descendente Aplicada", "Força Descendente Aplicada - N"}}),
+				    #"Colunas Removidas12" = Table.RemoveColumns(#"Colunas Renomeadas12",{"Unidade_14", "Unidade_15", "Unidade_16"}),
+				    #"Colunas Renomeadas13" = Table.RenameColumns(#"Colunas Removidas12",{{"Velocidade", "Velocidade - Km/h"}}),
+				    #"Colunas Removidas13" = Table.RemoveColumns(#"Colunas Renomeadas13",{"Unidade_17"}),
+				    #"Linhas Filtradas1" = Table.SelectRows(#"Colunas Removidas13", each true),
+				    #"Colunas Renomeadas14" = Table.RenameColumns(#"Linhas Filtradas1",{{"Tempo de Semeadura", "Tempo de Semeadura - segundos"}}),
+				    #"Colunas Removidas14" = Table.RemoveColumns(#"Colunas Renomeadas14",{"Unidade_18"}),
+				    #"Linhas Filtradas2" = Table.SelectRows(#"Colunas Removidas14", each true),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Linhas Filtradas2",{{"Tempo de Semeadura - segundos", type number}}),
+				    #"Linhas Filtradas3" = Table.SelectRows(#"Tipo Alterado1", each true),
+				    #"Colunas Removidas15" = Table.RemoveColumns(#"Linhas Filtradas3",{"Tempo de Semeadura - segundos"})
+				in
+				    #"Colunas Removidas15"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

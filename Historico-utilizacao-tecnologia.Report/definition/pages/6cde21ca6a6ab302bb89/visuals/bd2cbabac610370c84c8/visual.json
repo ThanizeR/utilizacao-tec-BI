@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 280,
     "width": 435,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -161,6 +161,19 @@
           },
           "selector": {
             "metadata": "Avg(f_UtilizacaoTecnologia.Harvest Smart Ligado (%))"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

@@ -6,7 +6,8 @@
     "y": 129.09090909090909,
     "z": 1000,
     "height": 271.81818181818181,
-    "width": 434.5454545454545
+    "width": 434.5454545454545,
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "lineChart",
@@ -94,7 +95,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#109E3B'"
+                      "Value": "'#4FB582'"
                     }
                   }
                 }
@@ -103,6 +104,32 @@
           },
           "selector": {
             "metadata": "Sum(f_UtilizacaoTecnologia.Tempo Ligado do Efficiency Manager™ Automático (%))"
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

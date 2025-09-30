@@ -6,8 +6,7 @@
     "y": 24.150943396226413,
     "z": 1000,
     "height": 70.7277628032345,
-    "width": 231.15902964959568,
-    "tabOrder": 1000
+    "width": 231.15902964959568
   },
   "visual": {
     "visualType": "slicer",
@@ -160,6 +159,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

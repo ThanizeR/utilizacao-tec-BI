@@ -22,3 +22,115 @@ relationship d93c3285-62b8-72e9-f48a-f119776af0a7
 	fromColumn: f_Taticas.'ID da Organização'
 	toColumn: f_UtilizacaoTecnologia.'ID da Organização'
 
+relationship b66616b7-6160-455a-8354-9ae09298b3cc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_Emparelhamento.'Emparelhado no'
+	toColumn: LocalDateTable_30170340-45e0-4f52-91bd-f099011aec16.Date
+
+relationship 8a0959e1-0e70-44a7-ab7b-75c9dc2c07e5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_Emparelhamento.'Visto pela Última Vez'
+	toColumn: LocalDateTable_6a959127-f520-4fb2-9e5f-d0fec3292730.Date
+
+relationship AutoDetected_2c6544b0-aa25-4bbc-923c-003b1e184b09
+	crossFilteringBehavior: bothDirections
+	fromColumn: f_Emparelhamento.'ID da Organização'
+	toColumn: d_Organizacoes.'ID da Organização'
+
+relationship AutoDetected_47d48e81-3aef-4f72-91ad-a16fd3b3c5ff
+	crossFilteringBehavior: bothDirections
+	fromColumn: d_Máquinas.'ID da Organização'
+	toColumn: d_Organizacoes.'ID da Organização'
+
+relationship 952b624d-0dec-4160-9cc1-ac68bc227f3d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'f_Preparo de Solo'.'Primeiro Cultivado'
+	toColumn: LocalDateTable_312cb8d0-2151-4193-aef0-8c1f109f6c2b.Date
+
+relationship 8c525111-7d00-4a48-b580-e2546b7da38a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'f_Preparo de Solo'.'Último Preparo do solo'
+	toColumn: LocalDateTable_8c76c42c-6b53-4b3f-a4e6-9bfb5fd548d6.Date
+
+relationship 75c98b1b-c840-58d1-a776-1baf7c50644b
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: f_Taticas.Organização
+	toColumn: 'f_Preparo de Solo'.Organizações
+
+relationship 1cc9e8a4-1cad-4a1b-8b74-4c27f8dbc140
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_plantio.'Primeiro Semeado'
+	toColumn: LocalDateTable_a6eccfa6-8831-417a-b2d6-3e5a5a2eb4b7.Date
+
+relationship 62f178b2-8f2a-4355-b8b8-04445bb6fa8a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_plantio.'Última Semeadura'
+	toColumn: LocalDateTable_aff05b81-35b0-4509-b668-b46391c756e3.Date
+
+relationship 278a043c-9630-7ac3-28f2-719136673f93
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: f_Taticas.Organização
+	toColumn: f_plantio.Organizações
+
+relationship bc53304b-21ab-2e74-1b2f-9051d15f8b70
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: d_Máquinas.'Número de Série'
+	toColumn: 'f_Preparo de Solo'.Equipamento
+
+relationship fc0b6a43-7256-9b5b-3cb0-4c427bf2209c
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: d_Máquinas.'Número de Série'
+	toColumn: f_plantio.Equipamento
+
+relationship 8e58cbb6-11d2-4d9d-9575-704c02312132
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_aplicacao.'Primeiro Aplicado'
+	toColumn: LocalDateTable_a2e4db3e-ab18-4d86-9b90-b6947922928e.Date
+
+relationship 7b869a18-286a-46e4-ad0c-cc0b3e8b158d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_aplicacao.'Última Aplicação'
+	toColumn: LocalDateTable_916e637e-766f-4aa1-acd1-33f3ec417013.Date
+
+relationship 38896c5a-9986-e6f9-9b8b-2ff101ccffee
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: f_Taticas.Organização
+	toColumn: f_aplicacao.Organizações
+
+relationship a8edfad2-af7c-0b22-6966-3f03845e3b75
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: d_Máquinas.'Número de Série'
+	toColumn: f_aplicacao.Equipamento
+
+relationship 84c84eef-ed3c-426d-b058-22ebda7351c3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_colheita.'Primeiro Colhido'
+	toColumn: LocalDateTable_bca99b68-a108-400d-80b8-1f6a7a9ead24.Date
+
+relationship 1cba7757-d45b-4eb1-b573-8cbeac964c5c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_colheita.'Última Colheita'
+	toColumn: LocalDateTable_b1431ee4-c6c7-44e2-bd7e-628af3919147.Date
+
+relationship bcdaf8a6-f68a-cfe7-3fc6-d3c91b525515
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: f_Taticas.Organização
+	toColumn: f_colheita.Organizações
+
+relationship 1de1a176-1f42-355a-774c-87c60e6d91a0
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: d_Máquinas.'Número de Série'
+	toColumn: f_colheita.Equipamento
+

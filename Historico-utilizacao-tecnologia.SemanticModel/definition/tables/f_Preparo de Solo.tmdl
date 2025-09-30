@@ -1,0 +1,198 @@
+table 'f_Preparo de Solo'
+	lineageTag: 9155e5d7-b14f-4302-8f6b-25cbac440091
+
+	column Clientes
+		dataType: string
+		lineageTag: a8ed4a97-0360-45c6-b5e7-fac457b79924
+		summarizeBy: none
+		sourceColumn: Clientes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fazendas
+		dataType: string
+		lineageTag: 603fbb27-9367-499e-9bbf-e82080f99b3c
+		summarizeBy: none
+		sourceColumn: Fazendas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organizações
+		dataType: string
+		lineageTag: 2431bae9-a50c-40b1-8575-0677e0f8dc54
+		summarizeBy: none
+		sourceColumn: Organizações
+
+		annotation SummarizationSetBy = Automatic
+
+	column Talhões
+		dataType: string
+		lineageTag: 4428ce9e-6cb5-49c7-8125-e488d92266e3
+		summarizeBy: none
+		sourceColumn: Talhões
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da Máquina'
+		dataType: string
+		lineageTag: 61c06776-a830-4a3e-b29b-133324a9842e
+		summarizeBy: none
+		sourceColumn: Nome da Máquina
+
+		annotation SummarizationSetBy = Automatic
+
+	column Equipamento
+		dataType: string
+		lineageTag: ed4f4b17-954c-47fa-b9e7-4bc2e865af51
+		summarizeBy: none
+		sourceColumn: Equipamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Operadores
+		dataType: string
+		lineageTag: 8e9063f7-b8c0-4ea4-a41f-5ccac4a62bc9
+		summarizeBy: none
+		sourceColumn: Operadores
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trabalho
+		dataType: string
+		lineageTag: 7115dc7f-5fe3-43e8-bedf-dc1c03f295c2
+		summarizeBy: none
+		sourceColumn: Trabalho
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Área Cultivada - ha'
+		dataType: double
+		lineageTag: 3817bbdb-0e62-4c50-822a-483d084486e4
+		summarizeBy: sum
+		sourceColumn: Área Cultivada - ha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Profundidade Alvo - cm'
+		dataType: double
+		lineageTag: 84f91cb0-2360-406d-967c-0f885502e4a6
+		summarizeBy: sum
+		sourceColumn: Profundidade Alvo - cm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Velocidade km/h'
+		dataType: double
+		lineageTag: 8a00d3b0-859d-4b64-867d-ad92e129f589
+		summarizeBy: sum
+		sourceColumn: Velocidade km/h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo de Cultivo - segundos'
+		dataType: double
+		lineageTag: 8404c300-f405-4229-a5ed-cdfbf0148fa8
+		summarizeBy: sum
+		sourceColumn: Tempo de Cultivo - segundos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Eficiência Operacional - ha/hr'
+		dataType: string
+		lineageTag: 05239150-094c-4288-b15d-0afc0b8c626b
+		summarizeBy: none
+		sourceColumn: Eficiência Operacional - ha/hr
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Combustível Total - l'
+		dataType: string
+		lineageTag: 0a29bbd5-f50e-44a2-b08f-adc5de595287
+		summarizeBy: none
+		sourceColumn: Combustível Total - l
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Área) - l/ha'
+		dataType: string
+		lineageTag: 977791f2-9211-4501-aa11-67627c9c586a
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Área) - l/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Tempo) - l/h'
+		dataType: string
+		lineageTag: 44a6cfda-bbf5-453b-a614-45533f9c6ab4
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Tempo) - l/h
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primeiro Cultivado'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 355608cc-8ea9-49de-afd3-9e4e11b7bd53
+		summarizeBy: none
+		sourceColumn: Primeiro Cultivado
+
+		variation Variation
+			isDefault
+			relationship: 952b624d-0dec-4160-9cc1-ac68bc227f3d
+			defaultHierarchy: LocalDateTable_312cb8d0-2151-4193-aef0-8c1f109f6c2b.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Último Preparo do solo'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6ad17765-f5bb-4142-b50c-f23193205aaf
+		summarizeBy: none
+		sourceColumn: Último Preparo do solo
+
+		variation Variation
+			isDefault
+			relationship: 8c525111-7d00-4a48-b580-e2546b7da38a
+			defaultHierarchy: LocalDateTable_8c76c42c-6b53-4b3f-a4e6-9bfb5fd548d6.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'f_Preparo de Solo' = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ThanizeRodrigues-Alv\OneDrive - Alvorada Sistemas Agrícolas Ltda\Área de Trabalho\utilização de tecnologias\ACOMPANHAMENTO MENSAL\Operação - Preparo de Solo.xlsx"), null, true),
+				    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Clientes", type text}, {"Fazendas", type text}, {"Organizações", type text}, {"Talhões", type text}, {"Nome da Máquina", type text}, {"Equipamento", type text}, {"Operadores", type text}, {"Trabalho", type text}, {"Área Cultivada", type number}, {"Unidade", type text}, {"Profundidade Alvo", type number}, {"Unidade_1", type text}, {"Velocidade", type number}, {"Unidade_2", type text}, {"Tempo de Cultivo", type number}, {"Unidade_3", type text}, {"Eficiência Operacional", type any}, {"Unidade_4", type text}, {"Combustível Total", type any}, {"Unidade_5", type text}, {"Taxa de Combustível (Área)", type any}, {"Unidade_6", type text}, {"Taxa de Combustível (Tempo)", type any}, {"Unidade_7", type text}, {"Primeiro Cultivado", type datetime}, {"Último Preparo do solo", type datetime}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Área Cultivada", "Área Cultivada - ha"}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Colunas Renomeadas",{"Unidade"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Colunas Removidas",{{"Profundidade Alvo", "Profundidade Alvo - cm"}}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Renomeadas1",{"Unidade_1"}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Colunas Removidas1",{{"Velocidade", "Velocidade km/h"}}),
+				    #"Colunas Removidas2" = Table.RemoveColumns(#"Colunas Renomeadas2",{"Unidade_2"}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Colunas Removidas2",{{"Tempo de Cultivo", "Tempo de Cultivo - segundos"}}),
+				    #"Colunas Removidas3" = Table.RemoveColumns(#"Colunas Renomeadas3",{"Unidade_3"}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Colunas Removidas3",{{"Eficiência Operacional", "Eficiência Operacional - ha/hr"}}),
+				    #"Colunas Removidas4" = Table.RemoveColumns(#"Colunas Renomeadas4",{"Unidade_4"}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Colunas Removidas4",{{"Combustível Total", "Combustível Total - l"}}),
+				    #"Colunas Removidas5" = Table.RemoveColumns(#"Colunas Renomeadas5",{"Unidade_5"}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Colunas Removidas5",{{"Taxa de Combustível (Área)", "Taxa de Combustível (Área) - l/ha"}}),
+				    #"Colunas Removidas6" = Table.RemoveColumns(#"Colunas Renomeadas6",{"Unidade_6"}),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Colunas Removidas6",{{"Taxa de Combustível (Tempo)", "Taxa de Combustível (Tempo) - l/h"}}),
+				    #"Colunas Removidas7" = Table.RemoveColumns(#"Colunas Renomeadas7",{"Unidade_7"})
+				in
+				    #"Colunas Removidas7"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 281,
     "width": 435,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -162,6 +162,19 @@
           },
           "selector": {
             "metadata": "Avg(f_UtilizacaoTecnologia.Pulsante Ativo (%))"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

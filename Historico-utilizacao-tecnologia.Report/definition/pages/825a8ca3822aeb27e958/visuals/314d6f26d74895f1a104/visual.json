@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "314d6f26d74895f1a104",
   "position": {
-    "x": 532.5,
-    "y": 426.25,
+    "x": 532.90640394088666,
+    "y": 426.50246305418722,
     "z": 11000,
-    "height": 267.5,
-    "width": 437.5,
-    "tabOrder": 11000
+    "height": 266.89655172413791,
+    "width": 437.14285714285717,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -115,9 +115,22 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4FB582'"
+                      "Value": "'#F84B00'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -126,42 +139,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2ab745e8f7e0deb6950f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Organização"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3e4113e349be8f774f98",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

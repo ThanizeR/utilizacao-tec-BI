@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 267.5,
     "width": 437.5,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -115,9 +115,22 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4FB582'"
+                      "Value": "'#008834'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -126,42 +139,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f2e79629a2b49f7f1242",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Automação de Curva do AutoTrac™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c000fa5f11d427a8c9a0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Organização"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

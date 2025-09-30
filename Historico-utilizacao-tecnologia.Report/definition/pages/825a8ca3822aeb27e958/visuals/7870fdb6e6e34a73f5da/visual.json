@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "7870fdb6e6e34a73f5da",
   "position": {
-    "x": 71.25,
-    "y": 128.75,
-    "z": 12001,
-    "height": 272.5,
-    "width": 568.75,
-    "tabOrder": 12001
+    "x": 70.935960591133011,
+    "y": 128.57142857142858,
+    "z": 13000,
+    "height": 273.10344827586209,
+    "width": 437.14285714285717,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "lineChart",
@@ -66,7 +66,8 @@
                 }
               },
               "queryRef": "Sum(f_UtilizacaoTecnologia.Automação de Curva do AutoTrac™ Ativo (%))",
-              "nativeQueryRef": "Média de Automação de Curva do AutoTrac™ Ativo (%)",
+              "nativeQueryRef": "Automação de Curva do AutoTrac™ Ativo (%)",
+              "displayName": "Automação de Curva do AutoTrac™ Ativo (%)",
               "format": "0.00%;-0.00%;0.00%"
             },
             {
@@ -86,7 +87,8 @@
                 }
               },
               "queryRef": "Sum(f_UtilizacaoTecnologia.AutoPath™ Ativo (%))",
-              "nativeQueryRef": "Média de AutoPath™ Ativo (%)",
+              "nativeQueryRef": "AutoPath™ Ativo (%)",
+              "displayName": "AutoPath™ Ativo (%)",
               "format": "0.00%;-0.00%;0.00%"
             },
             {
@@ -106,7 +108,8 @@
                 }
               },
               "queryRef": "Sum(f_UtilizacaoTecnologia.Direcionamento Passivo de Implemento AutoTrac™ Ativo (%))",
-              "nativeQueryRef": "Média de Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)",
+              "nativeQueryRef": "Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)",
+              "displayName": "Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)",
               "format": "0.00%;-0.00%;0.00%"
             },
             {
@@ -126,7 +129,8 @@
                 }
               },
               "queryRef": "Sum(f_UtilizacaoTecnologia.Sincronismo da Máquina Líder Ativo (%))",
-              "nativeQueryRef": "Média de Sincronismo da Máquina Líder Ativo (%)",
+              "nativeQueryRef": "Sincronismo da Máquina Líder Ativo (%)",
+              "displayName": "Sincronismo da Máquina Líder Ativo (%)",
               "format": "0.00%;-0.00%;0.00%"
             }
           ]
@@ -146,116 +150,199 @@
             }
           }
         }
+      ],
+      "y2Axis": [
+        {
+          "properties": {
+            "secFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "legendMarkerRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "'markerCircleDefault'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
+                }
+              }
+            },
+            "matchLineColor": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#008834'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.Automação de Curva do AutoTrac™ Ativo (%))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FAEE00'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.AutoPath™ Ativo (%))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F84B00'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.Direcionamento Passivo de Implemento AutoTrac™ Ativo (%))"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(f_UtilizacaoTecnologia.Sincronismo da Máquina Líder Ativo (%))"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2e4023da26471f860305",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Ano - Data Final"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "780e7a8e66356fbe41b3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "f_UtilizacaoTecnologia"
-              }
-            },
-            "Property": "Nome do Mês - Data Final"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e653aad235be799ab31d",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Automação de Curva do AutoTrac™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a6af45152cc9cf6334b3",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "AutoPath™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cf43f0b9843ef7413ec7",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Direcionamento Passivo de Implemento AutoTrac™ Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4ea6b7a08b244c161751",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "f_UtilizacaoTecnologia"
-                  }
-                },
-                "Property": "Sincronismo da Máquina Líder Ativo (%)"
-              }
-            },
-            "Function": 1
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

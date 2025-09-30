@@ -6,8 +6,7 @@
     "y": 426,
     "z": 2000,
     "height": 273,
-    "width": 439,
-    "tabOrder": 1000
+    "width": 439
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -169,6 +168,19 @@
           },
           "selector": {
             "metadata": "Avg(f_UtilizacaoTecnologia.Tempo de Controle de Seção Ativo (%))"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

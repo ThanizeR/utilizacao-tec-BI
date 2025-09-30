@@ -1,0 +1,178 @@
+table f_Emparelhamento
+	lineageTag: 183331a6-c373-47dc-857e-c59a6744d261
+
+	column 'Número de Série'
+		dataType: string
+		lineageTag: 71e0986b-ef2b-4319-ac80-94f2a644cc44
+		summarizeBy: none
+		sourceColumn: Número de Série
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modelo
+		dataType: string
+		lineageTag: 550bde2c-e93f-4df6-9822-d1b10013d2e0
+		summarizeBy: none
+		sourceColumn: Modelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: d5e40781-86ef-44c5-985d-f68fd99579b2
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marca
+		dataType: string
+		lineageTag: c90865de-d64e-433e-b1b4-9eb1f41be24b
+		summarizeBy: none
+		sourceColumn: Marca
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Versão do Software'
+		dataType: string
+		lineageTag: 7e074c80-9434-4a8f-ac80-b4a006f9d5ed
+		summarizeBy: none
+		sourceColumn: Versão do Software
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transferência Pendente'
+		dataType: string
+		lineageTag: 9356bdf0-0504-4f4f-8cf0-41f88198a6e6
+		summarizeBy: none
+		sourceColumn: Transferência Pendente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID da Organização'
+		dataType: int64
+		formatString: 0
+		lineageTag: fd08ca5f-a2e9-49d9-aca3-8e7cfc6b7aec
+		summarizeBy: none
+		sourceColumn: ID da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da Organização'
+		dataType: string
+		lineageTag: 443a1986-b7f6-42fd-8b41-f8b7cdc100e6
+		summarizeBy: none
+		sourceColumn: Nome da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cidade da Organização'
+		dataType: string
+		lineageTag: 100b9dc0-f1d1-4de8-8158-a375d72fc06b
+		summarizeBy: none
+		sourceColumn: Cidade da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado da Organização'
+		dataType: string
+		lineageTag: facafed6-5fbb-4095-a29d-747767cb6be5
+		summarizeBy: none
+		sourceColumn: Estado da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Conectividade'
+		dataType: string
+		lineageTag: d4d62b56-a280-4c4b-a19b-0090db3cc54a
+		summarizeBy: none
+		sourceColumn: Tipo de Conectividade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Status de Conectividade'
+		dataType: string
+		lineageTag: 1c3e50ad-eab3-4b73-91ef-02f4044fa776
+		summarizeBy: none
+		sourceColumn: Status de Conectividade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data de Expiração da Conectividade'
+		dataType: string
+		lineageTag: 4107b90f-3a12-4dba-ba73-435a538ff9af
+		summarizeBy: none
+		sourceColumn: Data de Expiração da Conectividade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Emparelhamento'
+		dataType: string
+		lineageTag: c74436cb-ec2d-4097-b938-8a7074492965
+		summarizeBy: none
+		sourceColumn: Nome do Emparelhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numero de Série de Emparelhamento'
+		dataType: string
+		lineageTag: 4c016f9d-7e9d-4cff-9c88-784c1f9ed788
+		summarizeBy: none
+		sourceColumn: Numero de Série de Emparelhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Emparelhado no'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f3ab2eaf-d145-45dd-9d6b-d3eeb175f9eb
+		summarizeBy: none
+		sourceColumn: Emparelhado no
+
+		variation Variation
+			isDefault
+			relationship: b66616b7-6160-455a-8354-9ae09298b3cc
+			defaultHierarchy: LocalDateTable_30170340-45e0-4f52-91bd-f099011aec16.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Visto pela Última Vez'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c60417c8-1800-409c-bdaa-143d28783146
+		summarizeBy: none
+		sourceColumn: Visto pela Última Vez
+
+		variation Variation
+			isDefault
+			relationship: 8a0959e1-0e70-44a7-ab7b-75c9dc2c07e5
+			defaultHierarchy: LocalDateTable_6a959127-f520-4fb2-9e5f-d0fec3292730.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direitos Administrativos'
+		dataType: string
+		lineageTag: f0116b75-1e40-4ae4-9eb2-ecea4911294b
+		summarizeBy: none
+		sourceColumn: Direitos Administrativos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_Emparelhamento = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ThanizeRodrigues-Alv\OneDrive - Alvorada Sistemas Agrícolas Ltda\Área de Trabalho\utilização de tecnologias\ACOMPANHAMENTO MENSAL\Monitores_software.xlsx"), null, true),
+				    Emparelhamento_Sheet = Fonte{[Item="Emparelhamento",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Emparelhamento_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Número de Série", type text}, {"Modelo", type text}, {"Tipo", type text}, {"Marca", type text}, {"Versão do Software", type text}, {"Transferência Pendente", type text}, {"ID da Organização", Int64.Type}, {"Nome da Organização", type text}, {"Cidade da Organização", type text}, {"Estado da Organização", type text}, {"Tipo de Conectividade", type text}, {"Status de Conectividade", type text}, {"Data de Expiração da Conectividade", type text}, {"Nome do Emparelhamento", type text}, {"Numero de Série de Emparelhamento", type text}, {"Emparelhado no", type date}, {"Visto pela Última Vez", type datetime}, {"Direitos Administrativos", type text}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each ([Modelo] = "4240 Universal" or [Modelo] = "4600 CommandCenter V2" or [Modelo] = "4640 Universal" or [Modelo] = "G5 CommandCenter" or [Modelo] = "G5 Universal" or [Modelo] = "G5Plus Universal"))
+				in
+				    #"Linhas Filtradas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

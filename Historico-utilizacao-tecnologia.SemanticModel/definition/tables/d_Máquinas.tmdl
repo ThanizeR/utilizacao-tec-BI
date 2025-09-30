@@ -1,0 +1,44 @@
+table d_Máquinas
+	lineageTag: f6cc7de0-b792-4fe9-bed1-dbb1d3b310a8
+
+	column 'Número de Série'
+		dataType: string
+		lineageTag: 2ac3a1c9-3d11-4954-9bb9-a5da90155b66
+		summarizeBy: none
+		sourceColumn: Número de Série
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID da Organização'
+		dataType: int64
+		formatString: 0
+		lineageTag: ddd1c0f1-b290-4188-9884-18ba03772b10
+		summarizeBy: none
+		sourceColumn: ID da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da Organização'
+		dataType: string
+		lineageTag: edb44332-4031-41cb-9868-43b3cb75ec9c
+		summarizeBy: none
+		sourceColumn: Nome da Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_Máquinas = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ThanizeRodrigues-Alv\OneDrive - Alvorada Sistemas Agrícolas Ltda\Área de Trabalho\utilização de tecnologias\ACOMPANHAMENTO MENSAL\Monitores_software.xlsx"), null, true),
+				    Máquinas_Sheet = Fonte{[Item="Máquinas",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Máquinas_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Apelido", type text}, {"Número de Série", type text}, {"Ano", Int64.Type}, {"Modelo", type text}, {"Tipo", type text}, {"Marca", type text}, {"Transferência Pendente", type text}, {"ID da Organização", Int64.Type}, {"Nome da Organização", type text}, {"Cidade da Organização", type text}, {"Estado da Organização", type text}, {"Tipo de Conectividade", type text}, {"Status de Conectividade", type text}, {"Data de Expiração da Conectividade", type text}, {"Visto pela Última Vez", type datetime}, {"Emparelhamento", Int64.Type}, {"Direitos Administrativos", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Apelido", "Transferência Pendente", "Modelo", "Tipo", "Marca", "Cidade da Organização", "Estado da Organização", "Tipo de Conectividade", "Status de Conectividade", "Data de Expiração da Conectividade", "Visto pela Última Vez", "Emparelhamento", "Direitos Administrativos", "Ano"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

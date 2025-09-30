@@ -1,0 +1,294 @@
+table f_colheita
+	lineageTag: 3e73a809-cb45-4a1f-9127-6c93db015a05
+
+	column Clientes
+		dataType: string
+		lineageTag: c3621103-50d8-4dff-9455-7d76677819ea
+		summarizeBy: none
+		sourceColumn: Clientes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fazendas
+		dataType: string
+		lineageTag: a2a75733-1166-42c7-9f56-c048596e834f
+		summarizeBy: none
+		sourceColumn: Fazendas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organizações
+		dataType: string
+		lineageTag: 4e6b972e-cab0-420d-9017-22086e9251b5
+		summarizeBy: none
+		sourceColumn: Organizações
+
+		annotation SummarizationSetBy = Automatic
+
+	column Talhões
+		dataType: string
+		lineageTag: 92a301eb-7fc9-4c44-8eae-20c28d631024
+		summarizeBy: none
+		sourceColumn: Talhões
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da Máquina'
+		dataType: string
+		lineageTag: 1ed2fd1a-0f99-40eb-b4c3-00c8fc07c97e
+		summarizeBy: none
+		sourceColumn: Nome da Máquina
+
+		annotation SummarizationSetBy = Automatic
+
+	column Equipamento
+		dataType: string
+		lineageTag: 48b6be6d-5eb3-445d-958f-22039f8a9ffe
+		summarizeBy: none
+		sourceColumn: Equipamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Operadores
+		dataType: string
+		lineageTag: e274e99f-624d-4e23-86ad-fc2450f64e51
+		summarizeBy: none
+		sourceColumn: Operadores
+
+		annotation SummarizationSetBy = Automatic
+
+	column Variedades
+		dataType: string
+		lineageTag: 7a7728f9-ccd4-41dd-9ad7-137a0ed2c041
+		summarizeBy: none
+		sourceColumn: Variedades
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trabalho
+		dataType: string
+		lineageTag: c2d7b10a-bf9b-4871-b3d5-5582ce4edb15
+		summarizeBy: none
+		sourceColumn: Trabalho
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Cultura'
+		dataType: string
+		lineageTag: b7341625-9bd5-4147-a9e3-13204c52b0cb
+		summarizeBy: none
+		sourceColumn: Tipo de Cultura
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Área Colhida - ha'
+		dataType: double
+		lineageTag: 941f4fe8-4c2f-4945-b073-f2d9e5f35eb8
+		summarizeBy: sum
+		sourceColumn: Área Colhida - ha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Umidade - %'
+		dataType: string
+		lineageTag: 8389418c-2c7a-410d-8196-37d82745df2a
+		summarizeBy: none
+		sourceColumn: Umidade - %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rendimento Líquido - t/ha'
+		dataType: string
+		lineageTag: 97736373-1127-4acc-a8c1-31966600379d
+		summarizeBy: none
+		sourceColumn: Rendimento Líquido - t/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Peso líquido - t'
+		dataType: string
+		lineageTag: 9843ed39-3197-4efb-a033-0ffe766c2506
+		summarizeBy: none
+		sourceColumn: Peso líquido - t
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rendimento Bruto - t/ha'
+		dataType: string
+		lineageTag: 320289a3-7cb5-495b-8066-222154532d10
+		summarizeBy: none
+		sourceColumn: Rendimento Bruto - t/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Peso Bruto - t'
+		dataType: string
+		lineageTag: f33bd79e-4d72-4e30-a4b5-17eaa2a0a776
+		summarizeBy: none
+		sourceColumn: Peso Bruto - t
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Velocidade - km/h'
+		dataType: double
+		lineageTag: 0ed2d983-3cb3-4a88-9df1-8b7bf34f4068
+		summarizeBy: sum
+		sourceColumn: Velocidade - km/h
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tempo de Colheita - segundos'
+		dataType: double
+		lineageTag: a0c1ace7-4e9a-4cd9-9164-1f247c68c771
+		summarizeBy: sum
+		sourceColumn: Tempo de Colheita - segundos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Eficiência Operacional - ha/hr'
+		dataType: double
+		lineageTag: 82ac2264-0bb9-45be-97c8-22aa7ed69814
+		summarizeBy: sum
+		sourceColumn: Eficiência Operacional - ha/hr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Combustível Total - l'
+		dataType: string
+		lineageTag: ce064bd5-51cb-4678-bc70-55705f7bf93e
+		summarizeBy: none
+		sourceColumn: Combustível Total - l
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Área) - l/ha'
+		dataType: string
+		lineageTag: 86002ae3-128e-4463-91d4-c4f86c24169c
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Área) - l/ha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Combustível (Tempo) - l/h'
+		dataType: string
+		lineageTag: eb7fc691-52eb-40df-8ec5-c603e8660bce
+		summarizeBy: none
+		sourceColumn: Taxa de Combustível (Tempo) - l/h
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rendimento (Seco) - t/h'
+		dataType: string
+		lineageTag: f80ccd70-56d2-41a3-8685-4318d11249d9
+		summarizeBy: none
+		sourceColumn: Rendimento (Seco) - t/h
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Colheita - t/h'
+		dataType: string
+		lineageTag: 50147e05-66c6-4145-a7c4-4d137ad81b30
+		summarizeBy: none
+		sourceColumn: Taxa de Colheita - t/h
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Eficiência do Combustível - t/l'
+		dataType: string
+		lineageTag: ebc0214f-f2dc-458d-af81-5c12fa40b4e7
+		summarizeBy: none
+		sourceColumn: Eficiência do Combustível - t/l
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matéria Seca - %'
+		dataType: string
+		lineageTag: 9702882c-9f02-40ba-b9d7-3a41cc668168
+		summarizeBy: none
+		sourceColumn: Matéria Seca - %
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primeiro Colhido'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3d5cf768-c9d2-4492-82c2-31ad34336837
+		summarizeBy: none
+		sourceColumn: Primeiro Colhido
+
+		variation Variation
+			isDefault
+			relationship: 84c84eef-ed3c-426d-b058-22ebda7351c3
+			defaultHierarchy: LocalDateTable_bca99b68-a108-400d-80b8-1f6a7a9ead24.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Última Colheita'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9b5b85bf-04d9-4e10-b2c4-cba3e81fa1ae
+		summarizeBy: none
+		sourceColumn: Última Colheita
+
+		variation Variation
+			isDefault
+			relationship: 1cba7757-d45b-4eb1-b573-8cbeac964c5c
+			defaultHierarchy: LocalDateTable_b1431ee4-c6c7-44e2-bd7e-628af3919147.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_colheita = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ThanizeRodrigues-Alv\OneDrive - Alvorada Sistemas Agrícolas Ltda\Área de Trabalho\utilização de tecnologias\ACOMPANHAMENTO MENSAL\Operação - Colheita.xlsx"), null, true),
+				    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Clientes", type text}, {"Fazendas", type text}, {"Organizações", type text}, {"Talhões", type text}, {"Nome da Máquina", type text}, {"Equipamento", type text}, {"Operadores", type text}, {"Variedades", type text}, {"Trabalho", type text}, {"Tipo de Cultura", type text}, {"Área Colhida", type number}, {"Unidade", type text}, {"Umidade", type any}, {"Unidade_1", type text}, {"Rendimento Líquido", type any}, {"Unidade_2", type text}, {"Peso líquido", type any}, {"Unidade_3", type text}, {"Rendimento Bruto", type any}, {"Unidade_4", type text}, {"Peso Bruto", type any}, {"Unidade_5", type text}, {"Velocidade", type number}, {"Unidade_6", type text}, {"Tempo de Colheita", type number}, {"Unidade_7", type text}, {"Eficiência Operacional", type number}, {"Unidade_8", type text}, {"Combustível Total", type any}, {"Unidade_9", type text}, {"Taxa de Combustível (Área)", type any}, {"Unidade_10", type text}, {"Taxa de Combustível (Tempo)", type any}, {"Unidade_11", type text}, {"Rendimento (Seco)", type any}, {"Unidade_12", type text}, {"Taxa de Colheita", type any}, {"Unidade_13", type text}, {"Eficiência do Combustível", type any}, {"Unidade_14", type text}, {"Matéria Seca", type any}, {"Unidade_15", type text}, {"Primeiro Colhido", type datetime}, {"Última Colheita", type datetime}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Área Colhida", "Área Colhida - ha"}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Colunas Renomeadas",{"Unidade"}),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Colunas Removidas",{{"Umidade", "Umidade - %"}}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Renomeadas1",{"Unidade_1"}),
+				    #"Colunas Renomeadas2" = Table.RenameColumns(#"Colunas Removidas1",{{"Rendimento Líquido", "Rendimento Líquido - t/ha"}}),
+				    #"Colunas Removidas2" = Table.RemoveColumns(#"Colunas Renomeadas2",{"Unidade_2"}),
+				    #"Colunas Renomeadas3" = Table.RenameColumns(#"Colunas Removidas2",{{"Peso líquido", "Peso líquido - t"}}),
+				    #"Colunas Removidas3" = Table.RemoveColumns(#"Colunas Renomeadas3",{"Unidade_3"}),
+				    #"Colunas Renomeadas4" = Table.RenameColumns(#"Colunas Removidas3",{{"Rendimento Bruto", "Rendimento Bruto - t/ha"}}),
+				    #"Colunas Removidas4" = Table.RemoveColumns(#"Colunas Renomeadas4",{"Unidade_4"}),
+				    #"Colunas Renomeadas5" = Table.RenameColumns(#"Colunas Removidas4",{{"Peso Bruto", "Peso Bruto - t"}}),
+				    #"Colunas Removidas5" = Table.RemoveColumns(#"Colunas Renomeadas5",{"Unidade_5"}),
+				    #"Colunas Renomeadas6" = Table.RenameColumns(#"Colunas Removidas5",{{"Velocidade", "Velocidade - km/h"}}),
+				    #"Colunas Removidas6" = Table.RemoveColumns(#"Colunas Renomeadas6",{"Unidade_6"}),
+				    #"Colunas Renomeadas7" = Table.RenameColumns(#"Colunas Removidas6",{{"Tempo de Colheita", "Tempo de Colheita - segundos"}}),
+				    #"Colunas Removidas7" = Table.RemoveColumns(#"Colunas Renomeadas7",{"Unidade_7"}),
+				    #"Colunas Renomeadas8" = Table.RenameColumns(#"Colunas Removidas7",{{"Eficiência Operacional", "Eficiência Operacional - ha/hr"}}),
+				    #"Colunas Removidas8" = Table.RemoveColumns(#"Colunas Renomeadas8",{"Unidade_8"}),
+				    #"Colunas Renomeadas9" = Table.RenameColumns(#"Colunas Removidas8",{{"Combustível Total", "Combustível Total - l"}}),
+				    #"Colunas Removidas9" = Table.RemoveColumns(#"Colunas Renomeadas9",{"Unidade_9"}),
+				    #"Colunas Renomeadas10" = Table.RenameColumns(#"Colunas Removidas9",{{"Taxa de Combustível (Área)", "Taxa de Combustível (Área) - l/ha"}}),
+				    #"Colunas Removidas10" = Table.RemoveColumns(#"Colunas Renomeadas10",{"Unidade_10"}),
+				    #"Colunas Renomeadas11" = Table.RenameColumns(#"Colunas Removidas10",{{"Taxa de Combustível (Tempo)", "Taxa de Combustível (Tempo) - l/h"}}),
+				    #"Colunas Removidas11" = Table.RemoveColumns(#"Colunas Renomeadas11",{"Unidade_11"}),
+				    #"Colunas Renomeadas12" = Table.RenameColumns(#"Colunas Removidas11",{{"Rendimento (Seco)", "Rendimento (Seco) - t/h"}}),
+				    #"Colunas Removidas12" = Table.RemoveColumns(#"Colunas Renomeadas12",{"Unidade_12"}),
+				    #"Colunas Renomeadas13" = Table.RenameColumns(#"Colunas Removidas12",{{"Taxa de Colheita", "Taxa de Colheita - t/h"}}),
+				    #"Colunas Removidas13" = Table.RemoveColumns(#"Colunas Renomeadas13",{"Unidade_13"}),
+				    #"Colunas Renomeadas14" = Table.RenameColumns(#"Colunas Removidas13",{{"Eficiência do Combustível", "Eficiência do Combustível - t/l"}}),
+				    #"Colunas Removidas14" = Table.RemoveColumns(#"Colunas Renomeadas14",{"Unidade_14"}),
+				    #"Colunas Renomeadas15" = Table.RenameColumns(#"Colunas Removidas14",{{"Matéria Seca", "Matéria Seca - %"}}),
+				    #"Colunas Removidas15" = Table.RemoveColumns(#"Colunas Renomeadas15",{"Unidade_15"})
+				in
+				    #"Colunas Removidas15"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
