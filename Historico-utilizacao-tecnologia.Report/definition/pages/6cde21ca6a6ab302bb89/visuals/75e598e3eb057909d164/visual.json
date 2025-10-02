@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "75e598e3eb057909d164",
   "position": {
-    "x": 850.458221024259,
-    "y": 50.889487870619945,
+    "x": 850.34482758620686,
+    "y": 50.541871921182263,
     "z": 14000,
-    "height": 46.576819407008081,
-    "width": 82.8032345013477,
+    "height": 53.201970443349751,
+    "width": 83.349753694581281,
     "tabOrder": 12000
   },
   "visual": {
@@ -70,14 +70,14 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Arial Black'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "12D"
                 }
               }
             },
@@ -100,7 +100,7 @@
                 }
               }
             },
-            "preserveWhitespace": {
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -113,6 +113,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -129,19 +136,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "wordWrap": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

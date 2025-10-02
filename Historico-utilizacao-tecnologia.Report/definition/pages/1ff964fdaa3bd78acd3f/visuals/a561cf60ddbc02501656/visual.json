@@ -70,14 +70,14 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Arial Black'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "12D"
                 }
               }
             },
@@ -100,7 +100,7 @@
                 }
               }
             },
-            "preserveWhitespace": {
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -113,6 +113,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -129,19 +136,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "wordWrap": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

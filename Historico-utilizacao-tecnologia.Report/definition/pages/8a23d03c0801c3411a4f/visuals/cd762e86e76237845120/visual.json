@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "cd762e86e76237845120",
   "position": {
-    "x": 775.41778975741238,
-    "y": 2.5876010781671157,
+    "x": 766.99507389162557,
+    "y": 2.6600985221674875,
     "z": 6000,
-    "height": 51.752021563342318,
-    "width": 134.55525606469,
+    "height": 51.428571428571431,
+    "width": 134.77832512315271,
     "tabOrder": 4000
   },
   "visual": {
@@ -66,31 +66,17 @@
       "labels": [
         {
           "properties": {
-            "labelDisplayUnits": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "'Arial'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Arial Black'''"
-                }
-              }
-            },
-            "preserveWhitespace": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "12D"
                 }
               }
             },
@@ -105,6 +91,20 @@
                   }
                 }
               }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -112,6 +112,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -128,19 +135,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "wordWrap": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

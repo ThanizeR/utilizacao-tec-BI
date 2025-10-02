@@ -47,11 +47,11 @@
                       "Property": "Sincronismo da Máquina Líder Ativo (%)"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(f_UtilizacaoTecnologia.Sincronismo da Máquina Líder Ativo (%))",
-              "nativeQueryRef": "Soma de Sincronismo da Máquina Líder Ativo (%)",
+              "nativeQueryRef": "Média de Sincronismo da Máquina Líder Ativo (%)",
               "format": "0.00%;-0.00%;0.00%"
             }
           ]
@@ -72,7 +72,7 @@
                     "Property": "Sincronismo da Máquina Líder Ativo (%)"
                   }
                 },
-                "Function": 0
+                "Function": 1
               }
             },
             "direction": "Descending"
@@ -132,6 +132,42 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sincronismo da Máquina Líder Ativo (%)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading3'"
                 }
               }
             }

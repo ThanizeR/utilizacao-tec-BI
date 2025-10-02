@@ -3,7 +3,7 @@
   "name": "fb1417957402d903649b",
   "position": {
     "x": 14.626993443617721,
-    "y": 16.175876010781671,
+    "y": 29.363068129043288,
     "z": 6000,
     "height": 73.315363881401609,
     "width": 196.6576819407008,
@@ -96,14 +96,21 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Times New Roman'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },

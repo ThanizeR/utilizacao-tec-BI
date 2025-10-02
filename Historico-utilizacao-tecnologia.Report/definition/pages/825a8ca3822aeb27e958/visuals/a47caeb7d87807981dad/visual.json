@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "a47caeb7d87807981dad",
   "position": {
-    "x": 680.09852216748766,
-    "y": 22.167487684729064,
+    "x": 459.31034482758622,
+    "y": 25.600985224751582,
     "z": 14000,
     "height": 74.482758620689651,
     "width": 183.54679802955664,
@@ -102,17 +102,31 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Versão do Software'"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Times New Roman'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -125,13 +139,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Versão do Software'"
                 }
               }
             }
@@ -173,11 +180,6 @@
               }
             }
           }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
         }
       ]
     },

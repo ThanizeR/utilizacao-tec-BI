@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "01c5736d650731a0760e",
   "position": {
-    "x": 588.655172413793,
+    "x": 678.32512315270935,
     "y": 156.05911330049261,
     "z": 8000,
     "height": 46.995073891625616,
@@ -111,6 +111,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {

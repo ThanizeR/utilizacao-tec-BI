@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "cf9b94bb4052880d3595",
   "position": {
-    "x": 160.81081081081081,
-    "y": 14.864864864864865,
+    "x": 385.71428571428572,
+    "y": 25.600985246066571,
     "z": 3000,
-    "height": 60.810810810810814,
-    "width": 231.08108108108109,
+    "height": 60.295566502463053,
+    "width": 231.42857142857142,
     "tabOrder": 1000
   },
   "visual": {
@@ -82,10 +82,31 @@
       "header": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "19D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -98,27 +119,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Times New Roman'''"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Data'"
                 }
               }
             }
@@ -174,13 +174,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

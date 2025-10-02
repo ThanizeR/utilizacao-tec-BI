@@ -3,7 +3,7 @@
   "name": "e3e0fc1be423694d8353",
   "position": {
     "x": 14.589665653495441,
-    "y": 19.45288753799392,
+    "y": 23.773086697720558,
     "z": 1000,
     "height": 73.9209726443769,
     "width": 196.47416413373861,
@@ -134,14 +134,21 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Times New Roman'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },

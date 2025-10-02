@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "11545e2f8e5680ca700b",
   "position": {
-    "x": 916.010781671159,
-    "y": 3.4501347708894876,
+    "x": 905.320197044335,
+    "y": 3.5467980295566504,
     "z": 8000,
-    "height": 51.752021563342318,
-    "width": 122.47978436657681,
+    "height": 51.428571428571431,
+    "width": 140.09852216748769,
     "tabOrder": 6000
   },
   "visual": {
@@ -70,25 +70,18 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Arial Black'''"
+                  "Value": "'Arial'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "12D"
                 }
               }
             },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "preserveWhitespace": {
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -106,6 +99,13 @@
                   }
                 }
               }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
             }
           }
         }
@@ -113,6 +113,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -129,19 +136,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "wordWrap": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
